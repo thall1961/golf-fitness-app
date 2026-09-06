@@ -1,0 +1,54 @@
+name: FairwayFit
+options:
+  bundleIdPrefix: com.thomashall
+  deploymentTarget:
+    iOS: "26.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    IPHONEOS_DEPLOYMENT_TARGET: "26.0"
+targets:
+  FairwayFit:
+    type: application
+    platform: iOS
+    sources:
+      - FairwayFit
+      - path: Content
+        buildPhase: resources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.thomashall.FairwayFit
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: "Fairway Fit"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        INFOPLIST_KEY_ITSAppUsesNonExemptEncryption: NO
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: "UIInterfaceOrientationPortrait"
+        SUPPORTS_MACCATALYST: NO
+        TARGETED_DEVICE_FAMILY: "1"
+        CURRENT_PROJECT_VERSION: 1
+        MARKETING_VERSION: "0.1.0"
+        CODE_SIGN_STYLE: Automatic
+  FairwayFitTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - FairwayFitTests
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+    dependencies:
+      - target: FairwayFit
+schemes:
+  FairwayFit:
+    build:
+      targets:
+        FairwayFit: all
+        FairwayFitTests: [test]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        - FairwayFitTests
