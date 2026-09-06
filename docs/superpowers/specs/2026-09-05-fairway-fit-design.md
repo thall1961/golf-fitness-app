@@ -1,6 +1,6 @@
 # Fairway Fit — Design
 
-**Date:** 2026-09-05
+**Date:** 2026-09-05 (revised 2026-09-06 — content moved out of the binary)
 **Status:** Approved design, ready for implementation planning
 **Location:** `~/solo/golf-workout-app`
 
@@ -12,8 +12,7 @@ log it, watch the numbers move. No golf-practice features — no drills, rounds,
 courses or swing video. This is the gym half of getting better at golf.
 
 Built fresh. It is not a fork of `~/solo/coach` (Everyday Trainer) or
-`~/solo/golf-trainer` (Break 100), though it borrows the "static content as
-code, SwiftData for user state only" architecture from the former.
+`~/solo/golf-trainer` (Break 100).
 
 ## Decisions made during brainstorming
 
@@ -26,56 +25,87 @@ code, SwiftData for user state only" architecture from the former.
 | Equipment | Bodyweight + resistance band + a club | Full gym, dumbbells, home/gym variants |
 | Scheduling | Sequential — next session up | Fixed weekly days, fixed-but-forgiving |
 | v1 extras | Progress & history, daily notifications | Pre-round warmup, HealthKit, Apple Watch |
-| Content storage | Swift values; SwiftData for user state only | Bundled JSON seeded into the store, all-in-SwiftData |
+| Content storage | Versioned JSON document: bundled baseline + remote override, decoded to in-memory value types | Swift values in code; JSON seeded into SwiftData; a real backend with an editing UI |
+| Content host | `content.json` in a GitHub repo, fetched over HTTPS | S3/R2 + CDN, CloudKit public database |
+| Content authoring | Hand-written JSON | Spreadsheet + export script, generated draft |
 | Name / target | Fairway Fit, iOS 26 | — |
 
 ## Architecture
 
-Static content as code. The exercise library, every session and all three
-programs are Swift values compiled into the binary. SwiftData persists only
-what belongs to the user. The rule that decides what to train next is a pure
-function over content plus completion history.
+Three layers that do not leak into each other.
 
-Three consequences worth stating plainly:
+**Content** is a single versioned JSON document describing every exercise,
+session and program. It is decoded into immutable value types held in memory.
+It is never written to SwiftData.
 
-1. A content typo is a compile error or a failing content test, never a data
-   repair task on an installed device.
-2. Rewriting a program in v1.1 requires no schema migration, because no
-   program data was ever persisted.
-3. The engine is testable with array literals — no store, no clock, no dates.
+**User state** is SwiftData, and only SwiftData: enrollment, completions,
+logged sets, profile. It references content by stable string id, never by
+position.
 
-The cost: content changes ship with an app release. For three hand-authored
-programs that is the correct trade. If programs ever need to come from a
-server, that is a different design and should be revisited then, not
-pre-built for now.
+**Logic** is `ProgramEngine`, a pure function over content values and
+completion records. No store, no clock, no network.
 
-## Content model
+Keeping content out of the database is the load-bearing decision. Most of the
+complexity in a seeding layer — upsert by id, "delete only if it carries no
+user data", version gates in `UserDefaults`, content migrations — exists only
+because content and user data share a store. Here they do not, so none of it
+is needed. Content is replaced wholesale; user rows are untouched because they
+were never in the same place.
+
+Shipping content separately from the app buys the thing that motivated it: a
+dead YouTube link, a wrong rep count or a new program is fixed by editing and
+pushing one file, not by an App Store release.
+
+The cost, stated plainly: content errors stop being compile errors. The
+validation suite is now the only thing between a bad edit and every user's
+phone, so it runs both in CI against the repo's `content.json` and at runtime
+against whatever was fetched.
+
+## The content document
+
+One file, `content.json`:
+
+```json
+{
+  "schemaVersion": 1,
+  "version": 7,
+  "exercises": [ ... ],
+  "programs": [ ... ]
+}
+```
+
+`schemaVersion` is the shape of the document; `version` is the edition of the
+content. The app understands exactly one `schemaVersion` and **rejects any
+document whose `schemaVersion` it does not recognise**, which is what stops a
+future content format from breaking older installs. `version` is a
+monotonically increasing integer and is the only thing compared to decide
+whether a fetched document is newer.
 
 ### Exercise
 
-The atom of the library. Roughly 45 of them.
+Roughly 45 of them.
 
 ```swift
-struct Exercise: Identifiable, Hashable {
-    let id: ExerciseID          // typed string id, e.g. "band-pull-apart"
+struct Exercise: Codable, Identifiable, Hashable {
+    let id: String              // stable, e.g. "band-pull-apart"
     let name: String
     let category: Category      // mobility, power, strength, core, balance
     let equipment: Equipment    // none, band, club
     let setup: String           // one or two sentences
     let cues: [String]          // three or four short coaching cues
     let swingRationale: String  // why a golfer cares
-    let demoURL: URL            // YouTube
+    let demoURL: URL            // YouTube, https
     let isBenchmark: Bool       // gets its own Progress chart
 }
 ```
 
-`isBenchmark` marks the handful of exercises that recur often enough across a
-program for a trend line to mean something. It is a property of the exercise,
-not something Progress infers by counting occurrences.
-
 `swingRationale` is a first-class field, not a nicety. It is the difference
 between a generic fitness app and one a golfer keeps using: every exercise
 states the swing fault or the yardage it is aimed at.
+
+`isBenchmark` marks the handful of exercises that recur often enough across a
+program for a trend line to mean something. It is a property of the exercise,
+not something the Progress screen infers by counting occurrences.
 
 ### Prescription
 
@@ -83,8 +113,8 @@ How an exercise appears in one specific session. This is what progresses; the
 exercise itself never changes.
 
 ```swift
-struct Prescription: Hashable {
-    let exercise: ExerciseID
+struct Prescription: Codable, Hashable {
+    let exerciseID: String
     let sets: Int
     let target: Target          // .reps(Int), .repsPerSide(Int),
                                 // .seconds(Int), .secondsPerSide(Int)
@@ -93,35 +123,41 @@ struct Prescription: Hashable {
 }
 ```
 
+`Target` is encoded as `{"kind": "reps", "value": 12}` — a flat, obvious shape
+rather than Swift's default enum encoding, since this JSON is written by hand.
+
 ### Block and Session
 
 ```swift
-enum BlockKind { case warmup, main, finisher }
+enum BlockKind: String, Codable { case warmup, main, finisher }
 
-struct Block: Hashable {
+struct Block: Codable, Hashable {
     let kind: BlockKind
     let prescriptions: [Prescription]
 }
 
-struct Session: Identifiable, Hashable {
-    let id: SessionID
+struct Session: Codable, Identifiable, Hashable {
+    let id: String              // stable and globally unique, e.g. "osp-w1d1"
     let name: String            // "Rotational Power B"
     let estimatedMinutes: Int
-    let blocks: [Block]         // always warmup -> main -> optional finisher
+    let blocks: [Block]         // warmup -> main -> optional finisher
 }
 ```
 
 The block is the unit the player groups by and the header the user sees, so
 they always know whether they are warming up or working.
 
+Session ids are globally unique across all programs, not merely unique within
+one, because completions are recorded against the session id.
+
 ### Program
 
 ```swift
-struct Program: Identifiable, Hashable {
-    let id: ProgramID
+struct Program: Codable, Identifiable, Hashable {
+    let id: String
     let title: String
     let subtitle: String
-    let weeks: Int              // descriptive only — nothing is calendar-bound
+    let weeks: Int              // descriptive only
     let sessionsPerWeek: Int    // descriptive only
     let whoThisIsFor: String    // a paragraph shown before enrolling
     let isRepeatable: Bool
@@ -142,8 +178,8 @@ branches on them.
 | Mobility Foundations | 12 | ~4 weeks at 3/week | No | The entry point. Hips, T-spine, ankles, shoulder turn. Run this first if you cannot make a full backswing. |
 
 All three assume bodyweight, one resistance band, and a golf club or alignment
-stick. Every session is doable at home or in a hotel room. There is one
-exercise library shared across all programs — no equipment variants.
+stick. Every session is doable at home or in a hotel room. One exercise
+library is shared across all programs — no equipment variants.
 
 ## Progression model
 
@@ -160,6 +196,44 @@ weight. Across a program's sessions, difficulty advances by:
 The variant requirement is why the library is ~45 exercises rather than ~25.
 Authoring the content is the single largest piece of work in this project.
 
+## ContentStore
+
+Resolves which content document to use, and fetches newer ones.
+
+```swift
+actor ContentStore {
+    private(set) var content: Content
+
+    func loadAtLaunch() throws      // synchronous-ish, blocks first render
+    func refreshInBackground() async // never blocks anything
+}
+```
+
+**At launch:** read the cached document from Application Support and the
+bundled document from the app bundle, decode and validate both, and use
+whichever has the higher `version`. A cached document that fails to decode or
+validate is deleted and the bundled one is used. The bundled document is
+therefore always a working floor: first launch works with no network, and no
+sequence of bad fetches can leave the app without content.
+
+**In the background, after launch:** GET the content URL. If the response
+decodes, has a recognised `schemaVersion`, passes full validation, and has a
+higher `version` than what is loaded, write it to the cache atomically.
+
+**Promotion happens at the next launch, not immediately.** Swapping content
+underneath a running app could change a session while someone is halfway
+through it. The fetch only ever updates the cache; the in-memory content for
+this run never changes.
+
+Failure at any step — offline, timeout, non-200, malformed JSON, unknown
+`schemaVersion`, failed validation, oversized response — is not an error the
+user sees. The fetch is abandoned and the cache is left as it was. Rejection
+is wholesale: a document is used in full or not at all, never partially
+merged.
+
+Constraints: HTTPS only, no credentials (the content is public), a 10-second
+timeout, and a 5 MB response cap.
+
 ## Persistence
 
 SwiftData, four models, all of them user-owned.
@@ -172,7 +246,7 @@ SwiftData, four models, all of them user-owned.
   var remindersEnabled: Bool
 
 @Model final class Enrollment
-  var programID: String
+  var programID: String             // content id
   var startedAt: Date
   var finishedAt: Date?
   var isActive: Bool                // exactly one active at a time
@@ -180,7 +254,7 @@ SwiftData, four models, all of them user-owned.
 
 @Model final class SessionCompletion
   var enrollment: Enrollment?
-  var sessionIndex: Int             // index into the program's sessions array
+  var sessionID: String             // content id — NOT a position
   var startedAt: Date
   var finishedAt: Date?             // nil = bailed out mid-session
   var rpe: Int?                     // optional 1...10, asked once at the end
@@ -188,20 +262,38 @@ SwiftData, four models, all of them user-owned.
 
 @Model final class SetLog
   var completion: SessionCompletion?
-  var exerciseID: String
+  var exerciseID: String            // content id
   var setNumber: Int
   var actualReps: Int?              // exactly one of reps/seconds is set,
   var actualSeconds: Int?           // matching the prescription's target
   var bandLevel: BandLevel?         // light, medium, heavy — band exercises only
 ```
 
-Not stored: exercises, prescriptions, sessions, programs, or any schedule.
+Every reference from user state into content is a **stable string id**. This
+is mandatory rather than stylistic: content is now mutable between releases,
+and an integer index into a reorderable array would silently misattribute
+someone's history the first time a session moved.
 
-`sessionIndex` referencing a position in a compiled array is the one place
-content and state touch. Programs are therefore **append-only across
-releases**: adding sessions to the end is safe, reordering or removing them
-would misalign existing history. If a program ever needs reordering, migrate
-completions by session id at launch rather than reindexing silently.
+### Content that changes underneath existing history
+
+Because content ships independently, user rows can outlive what they point at.
+The rules:
+
+- **A session id disappears from a program.** Completions for unknown ids are
+  ignored by the engine and by progress counts, but are never deleted. If the
+  id returns, the history reattaches on its own.
+- **A program id disappears.** An enrollment pointing at it is kept and shown
+  as archived and unavailable. Its logged history stays readable; it cannot be
+  resumed.
+- **An exercise id disappears.** Its `SetLog` rows persist and are shown by id
+  in history; it simply stops appearing in charts.
+- **Prescriptions change within a session someone already finished.** Nothing
+  is rewritten. The logs record what was actually done, which is the only
+  claim they ever made.
+
+Deleting content ids is therefore safe but lossy from the user's point of
+view, and is worth avoiding. Renaming an id is equivalent to deleting one and
+adding another.
 
 ### Logging shape
 
@@ -212,13 +304,13 @@ same progression story a heavier bar would.
 
 ## ProgramEngine
 
-Pure, no store, no clock. The engine does **not** take SwiftData models — it
+Pure, no store, no clock, no network. It does not take SwiftData models — it
 takes a value type mapped from them at the call site, which is what keeps the
 suites constructible from array literals with no container.
 
 ```swift
 struct CompletionRecord: Hashable {   // mapped from SessionCompletion
-    let sessionIndex: Int
+    let sessionID: String
     let isFinished: Bool
 }
 
@@ -238,10 +330,13 @@ enum ProgramEngine {
 
 Rules:
 
-- The next session is the lowest index with no *finished* completion. A bailed
-  session (`finishedAt == nil`) is offered again, and resuming reuses that
-  same completion row rather than creating a second one.
-- `isComplete` is true when every index has a finished completion.
+- The next session is the first in program order whose id has no *finished*
+  completion. A bailed session (`isFinished == false`) is offered again, and
+  resuming reuses that same completion row rather than creating a second one.
+- Completion records whose `sessionID` is not in the program are ignored
+  everywhere, including `progress` denominators.
+- `isComplete` is true when every session in the program has a finished
+  completion.
 - Completing a repeatable program archives the enrollment and creates a fresh
   active one for the same program, so history stays separated per cycle.
 
@@ -285,15 +380,16 @@ estimated minutes), program progress ring, one large Start button. With no
 active enrollment this tab is the program picker instead. With the program
 finished it is the congratulations and what-next state.
 
-**Programs.** The three programs, each with `whoThisIsFor`, the full session
-list, and enrol / switch. Switching archives the current enrollment rather
-than deleting it — history always survives.
+**Programs.** The programs in the current content document, each with
+`whoThisIsFor`, the full session list, and enrol / switch. Switching archives
+the current enrollment rather than deleting it — history always survives.
 
 **Progress.** Streak, sessions completed, completion percentage, benchmark
 charts, session history.
 
-**Settings.** Reminder weekdays and time, profile, and access to the full
-exercise library for reading outside a session.
+**Settings.** Reminder weekdays and time, profile, the full exercise library
+for reading outside a session, and the loaded content `version` (so a content
+problem can be diagnosed without a debugger).
 
 **The player** (presented full-screen from Today, not a tab). One exercise at
 a time with cues visible, set rows tapped to fill in as you go, a rest timer
@@ -313,6 +409,15 @@ YouTube in Safari.
 - Bundle id `com.thomashall.FairwayFit`, display name "Fairway Fit",
   iOS 26 deployment target, iPhone only, portrait.
 - Swift Testing for all suites.
+- `Content/content.json` lives in this repo, is committed, is copied into the
+  app bundle as the baseline, and is the same file served over HTTPS. One
+  source of truth, edited by hand.
+- The content URL is a single constant in one file, pointing at the raw
+  GitHub URL for `Content/content.json`.
+- **Prerequisite:** this repo is currently local-only. Remote content updates
+  do not work until it is pushed to GitHub and the file is reachable
+  unauthenticated over HTTPS. Until then the app runs on bundled content and
+  every fetch fails silently, which is a supported state, not a broken one.
 
 ```sh
 brew install xcodegen
@@ -323,30 +428,48 @@ open FairwayFit.xcodeproj
 ## Testing
 
 1. **ProgramEngine** — next session, progress, completion, bailed-session
-   resumption, repeatable re-enrollment. Array literals only.
-2. **Content validation** — every prescription references an exercise that
-   exists; every exercise has non-empty cues, a swing rationale and a demo
-   URL; no session has an empty block; no program has zero sessions; session
-   counts are consistent with the stated weeks and pace; exercise ids are
-   unique. This catches content typos in CI instead of on a phone.
-3. **Progress and streak** — week-boundary behaviour, gaps, the two-sessions
+   resumption, unknown-session-id records ignored, repeatable re-enrollment.
+   Array literals only.
+2. **Content validation** — one rule set, used in two places: a test that runs
+   it against the repo's `content.json` in CI, and `ContentStore` running the
+   identical rules against any fetched document. Rules: `schemaVersion` is
+   supported; `version` is a positive integer; exercise ids are unique and
+   non-empty; every `exerciseID` in a prescription resolves; every exercise
+   has a name, setup, at least two cues, a swing rationale and an `https`
+   demo URL; session ids are globally unique; no session has zero blocks and
+   no block has zero prescriptions; blocks appear in warmup → main →
+   finisher order; program ids are unique; no program has zero sessions;
+   `weeks` and `sessionsPerWeek` are positive; at least one exercise is
+   flagged `isBenchmark`; every `sets` and target value is positive.
+3. **ContentStore** — bundled-only first launch; cached-newer wins;
+   bundled-newer wins after an app update; corrupt cache falls back to bundled
+   and is deleted; unknown `schemaVersion` rejected; failed validation
+   rejected wholesale; oversized and non-200 responses ignored; a successful
+   fetch does not change in-memory content until relaunch.
+4. **Progress and streak** — week-boundary behaviour, gaps, the two-sessions
    threshold, timezone stability.
-4. **Reminder scheduling** — clock-injected, correct next-fire dates for a
+5. **Reminder scheduling** — clock-injected, correct next-fire dates for a
    given weekday set, rescheduling after completion.
 
 ## Failure modes
 
 | Situation | Behaviour |
 |---|---|
+| No network, ever | App works entirely on bundled content. Only demo videos need the network. |
+| Remote content unreachable, malformed, oversized, or invalid | Silently ignored; cache untouched; last good content stays loaded |
+| Cached content corrupt | Deleted, bundled content used |
+| Bundled content invalid | Fatal at launch. This is a build defect, not a runtime condition — the CI content test exists to make it impossible to ship. |
+| Content newer than the app understands (`schemaVersion`) | Rejected; app keeps working on what it has |
 | Notification permission denied | Settings explains it; app otherwise unaffected |
-| YouTube link cannot open | Cues and rationale remain — the video is never the only source of truth |
+| YouTube link cannot open, or the video is gone | Cues and rationale stand alone; fix is a content push, not a release |
 | Bail out mid-session | Partial logs persist; session stays unfinished; engine offers it again and resumes the same row |
 | Switch programs mid-way | Old enrollment archived, not deleted; history intact |
-| SwiftData container fails to load | Fatal at launch with a clear message; there is no remote copy to fall back to |
-| No network | Everything works except opening a demo video. There is no backend. |
+| Content ids removed underneath existing history | See "Content that changes underneath existing history" |
+| SwiftData container fails to load | Fatal at launch with a clear message; there is no remote copy of user data to fall back to |
 
 ## Out of scope for v1
 
 Pre-round warmup routines, HealthKit and Apple Watch, bundled demo media,
 profile-generated or adaptive programming, movement screens, dumbbell or
-barbell variants, iPad, sync across devices, and any server component.
+barbell variants, iPad, sync of user data across devices, a content editing
+UI, and any server component beyond a static file over HTTPS.
