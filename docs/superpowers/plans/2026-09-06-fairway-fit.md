@@ -982,8 +982,10 @@ import Testing
 @Suite struct BundledContentTests {
 
     private func bundledData() throws -> Data {
+        // Bundle.main is the host app bundle for a host-application unit test,
+        // which is where the Content build phase copies content.json.
         let url = try #require(
-            Bundle(for: BundleToken.self).url(forResource: "content", withExtension: "json"),
+            Bundle.main.url(forResource: "content", withExtension: "json"),
             "content.json is missing from the app bundle"
         )
         return try Data(contentsOf: url)
@@ -1019,12 +1021,7 @@ import Testing
         #expect(Set(links).count == links.count, "two exercises share a demo link")
     }
 }
-
-/// Anchors `Bundle(for:)` to the test bundle so the app's resources resolve.
-private final class BundleToken {}
 ```
-
-Note: the test bundle for a host-application unit test can reach the app bundle's resources; if `Bundle(for:)` returns the test bundle without `content.json`, fall back to `Bundle.main.url(forResource:withExtension:)` inside the same helper.
 
 - [ ] **Step 2: Run the test to verify it fails**
 
@@ -1827,6 +1824,19 @@ final class Profile {
         self.reminderHour = reminderHour
         self.reminderMinute = reminderMinute
         self.remindersEnabled = remindersEnabled
+    }
+
+    /// The single profile row, created on first read. Called from `.task`,
+    /// never from a view body — inserting during a body evaluation would
+    /// invalidate the `@Query` that triggered it.
+    static func loadOrCreate(in context: ModelContext) -> Profile {
+        if let existing = try? context.fetch(FetchDescriptor<Profile>()).first {
+            return existing
+        }
+        let fresh = Profile()
+        context.insert(fresh)
+        try? context.save()
+        return fresh
     }
 }
 ```
@@ -3696,18 +3706,10 @@ struct SettingsView: View {
     @Environment(\.modelContext) private var context
     @Environment(\.openURL) private var openURL
 
-    @Query private var profiles: [Profile]
+    @State private var profile: Profile?
     @State private var authorizationStatus: UNAuthorizationStatus = .notDetermined
 
     private let notifications: any NotificationScheduling = NotificationCenterClient()
-
-    private var profile: Profile {
-        if let existing = profiles.first { return existing }
-        let fresh = Profile()
-        context.insert(fresh)
-        try? context.save()
-        return fresh
-    }
 
     private var weekdayNames: [(number: Int, name: String)] {
         let symbols = Calendar.current.shortWeekdaySymbols
@@ -3716,7 +3718,23 @@ struct SettingsView: View {
 
     var body: some View {
         NavigationStack {
-            Form {
+            Group {
+                if let profile {
+                    form(profile: profile)
+                } else {
+                    ProgressView()
+                }
+            }
+            .navigationTitle("Settings")
+            .task {
+                if profile == nil { profile = Profile.loadOrCreate(in: context) }
+                authorizationStatus = await notifications.authorizationStatus()
+            }
+        }
+    }
+
+    private func form(profile: Profile) -> some View {
+        Form {
                 Section {
                     Toggle("Training reminders", isOn: Binding(
                         get: { profile.remindersEnabled },
@@ -3785,13 +3803,11 @@ struct SettingsView: View {
                 } footer: {
                     Text("New content is downloaded in the background and starts being used the next time you open the app.")
                 }
-            }
-            .navigationTitle("Settings")
-            .task { authorizationStatus = await notifications.authorizationStatus() }
         }
     }
 
     private func toggle(weekday: Int) {
+        guard let profile else { return }
         if let index = profile.reminderWeekdays.firstIndex(of: weekday) {
             profile.reminderWeekdays.remove(at: index)
         } else {
@@ -3802,6 +3818,7 @@ struct SettingsView: View {
     }
 
     private func applyReminders(requestingPermission: Bool) async {
+        guard let profile else { return }
         if requestingPermission {
             _ = await notifications.requestAuthorization()
         }
