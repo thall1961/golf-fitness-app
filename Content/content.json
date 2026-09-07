@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": 1,
+  "version": 2,
   "exercises": [
     {
       "id": "ninety-ninety-hip-switch",
@@ -551,7 +551,7 @@
       "name": "Rear-Foot-Elevated Split Squat",
       "category": "strength",
       "equipment": "none",
-      "setup": "Stand a stride length in front of a bench, rest the top of your back foot on it, front foot flat ahead.",
+      "setup": "Stand a stride length in front of a chair, step or couch, rest the top of your back foot on it, front foot flat ahead.",
       "cues": [
         "Lower straight down, not forward",
         "Front knee tracks over toes",
@@ -695,7 +695,7 @@
       "name": "Copenhagen Plank",
       "category": "core",
       "equipment": "none",
-      "setup": "Lie on your side, top foot resting on a bench, bottom leg tucked behind, propped up on your bottom forearm.",
+      "setup": "Lie on your side, top foot resting on a chair, step or couch, bottom leg tucked behind, propped up on your bottom forearm.",
       "cues": [
         "Lift the bottom leg to meet the top",
         "Keep hips lifted and square",
@@ -1971,6 +1971,3292 @@
                     "value": 12
                   },
                   "restSeconds": 30,
+                  "note": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "off-season-power",
+      "title": "Off-Season Power",
+      "subtitle": "Build the speed you play with next season",
+      "weeks": 8,
+      "sessionsPerWeek": 3,
+      "whoThisIsFor": "Move here once mobility is no longer the limit and you want to build the rotational speed, single-leg strength and pressing power that turn a good off-season into more distance next spring. Eight weeks, three sessions a week, a band and a club is all you need.",
+      "isRepeatable": false,
+      "sessions": [
+        {
+          "id": "osp-w1d1",
+          "name": "Rotational Power",
+          "estimatedMinutes": 38,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "worlds-greatest-stretch",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 6
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "quadruped-tspine-rotation",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "deep-squat-hold",
+                  "sets": 1,
+                  "target": {
+                    "kind": "seconds",
+                    "value": 20
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "band-rotational-punch",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 6
+                  },
+                  "restSeconds": 45,
+                  "note": null
+                },
+                {
+                  "exerciseID": "club-speed-swing",
+                  "sets": 2,
+                  "target": {
+                    "kind": "reps",
+                    "value": 8
+                  },
+                  "restSeconds": 45,
+                  "note": null
+                },
+                {
+                  "exerciseID": "reverse-lunge",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "single-leg-glute-bridge",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-anti-rotation-press",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "finisher",
+              "prescriptions": [
+                {
+                  "exerciseID": "skater-hop",
+                  "sets": 3,
+                  "target": {
+                    "kind": "reps",
+                    "value": 16
+                  },
+                  "restSeconds": 30,
+                  "note": "Quick, light feet -- this is speed work, not a grind."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "osp-w1d2",
+          "name": "Single-Leg Strength",
+          "estimatedMinutes": 37,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "standing-hamstring-sweep",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "half-kneeling-ankle-rock",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "seated-figure-four",
+                  "sets": 1,
+                  "target": {
+                    "kind": "secondsPerSide",
+                    "value": 20
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "rfe-split-squat",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 45,
+                  "note": null
+                },
+                {
+                  "exerciseID": "single-leg-rdl",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 45,
+                  "note": null
+                },
+                {
+                  "exerciseID": "lateral-bound",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 6
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "side-plank",
+                  "sets": 2,
+                  "target": {
+                    "kind": "secondsPerSide",
+                    "value": 20
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "single-leg-balance-club-reach",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "finisher",
+              "prescriptions": [
+                {
+                  "exerciseID": "split-jump",
+                  "sets": 3,
+                  "target": {
+                    "kind": "reps",
+                    "value": 12
+                  },
+                  "restSeconds": 30,
+                  "note": "Land soft -- control beats height here."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "osp-w1d3",
+          "name": "Push/Pull and Core",
+          "estimatedMinutes": 35,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "cat-cow",
+                  "sets": 1,
+                  "target": {
+                    "kind": "reps",
+                    "value": 8
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-shoulder-pass-through",
+                  "sets": 1,
+                  "target": {
+                    "kind": "reps",
+                    "value": 8
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "wall-slide",
+                  "sets": 1,
+                  "target": {
+                    "kind": "reps",
+                    "value": 8
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "band-hip-hinge-snap",
+                  "sets": 2,
+                  "target": {
+                    "kind": "reps",
+                    "value": 10
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "push-up",
+                  "sets": 2,
+                  "target": {
+                    "kind": "reps",
+                    "value": 8
+                  },
+                  "restSeconds": 45,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-row",
+                  "sets": 2,
+                  "target": {
+                    "kind": "reps",
+                    "value": 10
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-face-pull",
+                  "sets": 2,
+                  "target": {
+                    "kind": "reps",
+                    "value": 10
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "front-plank-reach",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 6
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "osp-w2d1",
+          "name": "Rotational Power -- Week 2",
+          "estimatedMinutes": 39,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "worlds-greatest-stretch",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 7
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "quadruped-tspine-rotation",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 9
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "deep-squat-hold",
+                  "sets": 1,
+                  "target": {
+                    "kind": "seconds",
+                    "value": 23
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "band-rotational-punch",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 7
+                  },
+                  "restSeconds": 45,
+                  "note": null
+                },
+                {
+                  "exerciseID": "club-speed-swing",
+                  "sets": 2,
+                  "target": {
+                    "kind": "reps",
+                    "value": 9
+                  },
+                  "restSeconds": 45,
+                  "note": null
+                },
+                {
+                  "exerciseID": "reverse-lunge",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 9
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "single-leg-glute-bridge",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 9
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-anti-rotation-press",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 9
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "finisher",
+              "prescriptions": [
+                {
+                  "exerciseID": "skater-hop",
+                  "sets": 3,
+                  "target": {
+                    "kind": "reps",
+                    "value": 18
+                  },
+                  "restSeconds": 30,
+                  "note": "Quick, light feet -- this is speed work, not a grind."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "osp-w2d2",
+          "name": "Single-Leg Strength -- Week 2",
+          "estimatedMinutes": 38,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "standing-hamstring-sweep",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 9
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "half-kneeling-ankle-rock",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 9
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "seated-figure-four",
+                  "sets": 1,
+                  "target": {
+                    "kind": "secondsPerSide",
+                    "value": 23
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "rfe-split-squat",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 9
+                  },
+                  "restSeconds": 45,
+                  "note": null
+                },
+                {
+                  "exerciseID": "single-leg-rdl",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 9
+                  },
+                  "restSeconds": 45,
+                  "note": null
+                },
+                {
+                  "exerciseID": "lateral-bound",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 7
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "side-plank",
+                  "sets": 2,
+                  "target": {
+                    "kind": "secondsPerSide",
+                    "value": 24
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "single-leg-balance-club-reach",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 9
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "finisher",
+              "prescriptions": [
+                {
+                  "exerciseID": "split-jump",
+                  "sets": 3,
+                  "target": {
+                    "kind": "reps",
+                    "value": 14
+                  },
+                  "restSeconds": 30,
+                  "note": "Land soft -- control beats height here."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "osp-w2d3",
+          "name": "Push/Pull and Core -- Week 2",
+          "estimatedMinutes": 36,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "cat-cow",
+                  "sets": 1,
+                  "target": {
+                    "kind": "reps",
+                    "value": 9
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-shoulder-pass-through",
+                  "sets": 1,
+                  "target": {
+                    "kind": "reps",
+                    "value": 9
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "wall-slide",
+                  "sets": 1,
+                  "target": {
+                    "kind": "reps",
+                    "value": 9
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "band-hip-hinge-snap",
+                  "sets": 2,
+                  "target": {
+                    "kind": "reps",
+                    "value": 11
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "push-up",
+                  "sets": 2,
+                  "target": {
+                    "kind": "reps",
+                    "value": 9
+                  },
+                  "restSeconds": 45,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-row",
+                  "sets": 2,
+                  "target": {
+                    "kind": "reps",
+                    "value": 11
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-face-pull",
+                  "sets": 2,
+                  "target": {
+                    "kind": "reps",
+                    "value": 11
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "front-plank-reach",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 7
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "osp-w3d1",
+          "name": "Rotational Power -- Week 3",
+          "estimatedMinutes": 40,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "worlds-greatest-stretch",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "quadruped-tspine-rotation",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "deep-squat-hold",
+                  "sets": 1,
+                  "target": {
+                    "kind": "seconds",
+                    "value": 26
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "band-rotational-punch",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 45,
+                  "note": null
+                },
+                {
+                  "exerciseID": "club-speed-swing",
+                  "sets": 3,
+                  "target": {
+                    "kind": "reps",
+                    "value": 10
+                  },
+                  "restSeconds": 45,
+                  "note": null
+                },
+                {
+                  "exerciseID": "reverse-lunge",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "single-leg-glute-bridge",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-anti-rotation-press",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "finisher",
+              "prescriptions": [
+                {
+                  "exerciseID": "skater-hop",
+                  "sets": 3,
+                  "target": {
+                    "kind": "reps",
+                    "value": 20
+                  },
+                  "restSeconds": 30,
+                  "note": "Quick, light feet -- this is speed work, not a grind."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "osp-w3d2",
+          "name": "Single-Leg Strength -- Week 3",
+          "estimatedMinutes": 39,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "standing-hamstring-sweep",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "half-kneeling-ankle-rock",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "seated-figure-four",
+                  "sets": 1,
+                  "target": {
+                    "kind": "secondsPerSide",
+                    "value": 26
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "rfe-split-squat",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 45,
+                  "note": null
+                },
+                {
+                  "exerciseID": "single-leg-rdl",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 45,
+                  "note": null
+                },
+                {
+                  "exerciseID": "lateral-bound",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "side-plank",
+                  "sets": 3,
+                  "target": {
+                    "kind": "secondsPerSide",
+                    "value": 28
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "single-leg-balance-club-reach",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "finisher",
+              "prescriptions": [
+                {
+                  "exerciseID": "split-jump",
+                  "sets": 3,
+                  "target": {
+                    "kind": "reps",
+                    "value": 16
+                  },
+                  "restSeconds": 30,
+                  "note": "Land soft -- control beats height here."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "osp-w3d3",
+          "name": "Push/Pull and Core -- Week 3",
+          "estimatedMinutes": 36,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "cat-cow",
+                  "sets": 1,
+                  "target": {
+                    "kind": "reps",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-shoulder-pass-through",
+                  "sets": 1,
+                  "target": {
+                    "kind": "reps",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "wall-slide",
+                  "sets": 1,
+                  "target": {
+                    "kind": "reps",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "band-hip-hinge-snap",
+                  "sets": 3,
+                  "target": {
+                    "kind": "reps",
+                    "value": 12
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "push-up",
+                  "sets": 3,
+                  "target": {
+                    "kind": "reps",
+                    "value": 10
+                  },
+                  "restSeconds": 45,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-row",
+                  "sets": 3,
+                  "target": {
+                    "kind": "reps",
+                    "value": 12
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-face-pull",
+                  "sets": 3,
+                  "target": {
+                    "kind": "reps",
+                    "value": 12
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "front-plank-reach",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "osp-w4d1",
+          "name": "Rotational Power -- Week 4",
+          "estimatedMinutes": 41,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "worlds-greatest-stretch",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "quadruped-tspine-rotation",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "deep-squat-hold",
+                  "sets": 1,
+                  "target": {
+                    "kind": "seconds",
+                    "value": 26
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "band-rotational-punch",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 35,
+                  "note": null
+                },
+                {
+                  "exerciseID": "club-speed-swing",
+                  "sets": 3,
+                  "target": {
+                    "kind": "reps",
+                    "value": 10
+                  },
+                  "restSeconds": 35,
+                  "note": null
+                },
+                {
+                  "exerciseID": "reverse-lunge",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 25,
+                  "note": null
+                },
+                {
+                  "exerciseID": "single-leg-glute-bridge",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 25,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-anti-rotation-press",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 25,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "finisher",
+              "prescriptions": [
+                {
+                  "exerciseID": "skater-hop",
+                  "sets": 4,
+                  "target": {
+                    "kind": "reps",
+                    "value": 20
+                  },
+                  "restSeconds": 25,
+                  "note": "Quick, light feet -- this is speed work, not a grind."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "osp-w4d2",
+          "name": "Single-Leg Strength -- Week 4",
+          "estimatedMinutes": 40,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "standing-hamstring-sweep",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "half-kneeling-ankle-rock",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "seated-figure-four",
+                  "sets": 1,
+                  "target": {
+                    "kind": "secondsPerSide",
+                    "value": 26
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "rfe-split-squat",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 35,
+                  "note": null
+                },
+                {
+                  "exerciseID": "single-leg-rdl",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 35,
+                  "note": null
+                },
+                {
+                  "exerciseID": "lateral-bound",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 25,
+                  "note": null
+                },
+                {
+                  "exerciseID": "side-plank",
+                  "sets": 3,
+                  "target": {
+                    "kind": "secondsPerSide",
+                    "value": 28
+                  },
+                  "restSeconds": 25,
+                  "note": null
+                },
+                {
+                  "exerciseID": "single-leg-balance-club-reach",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 25,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "finisher",
+              "prescriptions": [
+                {
+                  "exerciseID": "split-jump",
+                  "sets": 4,
+                  "target": {
+                    "kind": "reps",
+                    "value": 16
+                  },
+                  "restSeconds": 25,
+                  "note": "Land soft -- control beats height here."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "osp-w4d3",
+          "name": "Push/Pull and Core -- Week 4",
+          "estimatedMinutes": 37,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "cat-cow",
+                  "sets": 1,
+                  "target": {
+                    "kind": "reps",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-shoulder-pass-through",
+                  "sets": 1,
+                  "target": {
+                    "kind": "reps",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "wall-slide",
+                  "sets": 1,
+                  "target": {
+                    "kind": "reps",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "band-hip-hinge-snap",
+                  "sets": 3,
+                  "target": {
+                    "kind": "reps",
+                    "value": 12
+                  },
+                  "restSeconds": 25,
+                  "note": null
+                },
+                {
+                  "exerciseID": "push-up",
+                  "sets": 3,
+                  "target": {
+                    "kind": "reps",
+                    "value": 10
+                  },
+                  "restSeconds": 35,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-row",
+                  "sets": 3,
+                  "target": {
+                    "kind": "reps",
+                    "value": 12
+                  },
+                  "restSeconds": 25,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-face-pull",
+                  "sets": 3,
+                  "target": {
+                    "kind": "reps",
+                    "value": 12
+                  },
+                  "restSeconds": 25,
+                  "note": null
+                },
+                {
+                  "exerciseID": "front-plank-reach",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 25,
+                  "note": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "osp-w5d1",
+          "name": "Rotational Power -- Week 5",
+          "estimatedMinutes": 42,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "worlds-greatest-stretch",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "quadruped-tspine-rotation",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "deep-squat-hold",
+                  "sets": 1,
+                  "target": {
+                    "kind": "seconds",
+                    "value": 26
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "band-rotational-punch",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 9
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "club-speed-swing",
+                  "sets": 3,
+                  "target": {
+                    "kind": "reps",
+                    "value": 11
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "reverse-lunge",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 11
+                  },
+                  "restSeconds": 20,
+                  "note": null
+                },
+                {
+                  "exerciseID": "single-leg-glute-bridge",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 11
+                  },
+                  "restSeconds": 20,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-anti-rotation-press",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 11
+                  },
+                  "restSeconds": 20,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "finisher",
+              "prescriptions": [
+                {
+                  "exerciseID": "skater-hop",
+                  "sets": 4,
+                  "target": {
+                    "kind": "reps",
+                    "value": 22
+                  },
+                  "restSeconds": 20,
+                  "note": "Quick, light feet -- this is speed work, not a grind."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "osp-w5d2",
+          "name": "Single-Leg Strength -- Week 5",
+          "estimatedMinutes": 41,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "standing-hamstring-sweep",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "half-kneeling-ankle-rock",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "seated-figure-four",
+                  "sets": 1,
+                  "target": {
+                    "kind": "secondsPerSide",
+                    "value": 26
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "rfe-split-squat",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 11
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "single-leg-rdl",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 11
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "lateral-bound",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 9
+                  },
+                  "restSeconds": 20,
+                  "note": null
+                },
+                {
+                  "exerciseID": "side-plank",
+                  "sets": 3,
+                  "target": {
+                    "kind": "secondsPerSide",
+                    "value": 32
+                  },
+                  "restSeconds": 20,
+                  "note": null
+                },
+                {
+                  "exerciseID": "single-leg-balance-club-reach",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 11
+                  },
+                  "restSeconds": 20,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "finisher",
+              "prescriptions": [
+                {
+                  "exerciseID": "split-jump",
+                  "sets": 4,
+                  "target": {
+                    "kind": "reps",
+                    "value": 18
+                  },
+                  "restSeconds": 20,
+                  "note": "Land soft -- control beats height here."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "osp-w5d3",
+          "name": "Push/Pull and Core -- Week 5",
+          "estimatedMinutes": 37,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "cat-cow",
+                  "sets": 1,
+                  "target": {
+                    "kind": "reps",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-shoulder-pass-through",
+                  "sets": 1,
+                  "target": {
+                    "kind": "reps",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "wall-slide",
+                  "sets": 1,
+                  "target": {
+                    "kind": "reps",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "band-hip-hinge-snap",
+                  "sets": 3,
+                  "target": {
+                    "kind": "reps",
+                    "value": 13
+                  },
+                  "restSeconds": 20,
+                  "note": null
+                },
+                {
+                  "exerciseID": "push-up",
+                  "sets": 3,
+                  "target": {
+                    "kind": "reps",
+                    "value": 11
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-row",
+                  "sets": 3,
+                  "target": {
+                    "kind": "reps",
+                    "value": 13
+                  },
+                  "restSeconds": 20,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-face-pull",
+                  "sets": 3,
+                  "target": {
+                    "kind": "reps",
+                    "value": 13
+                  },
+                  "restSeconds": 20,
+                  "note": null
+                },
+                {
+                  "exerciseID": "front-plank-reach",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 9
+                  },
+                  "restSeconds": 20,
+                  "note": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "osp-w6d1",
+          "name": "Rotational Power -- Week 6",
+          "estimatedMinutes": 42,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "worlds-greatest-stretch",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "quadruped-tspine-rotation",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "deep-squat-hold",
+                  "sets": 1,
+                  "target": {
+                    "kind": "seconds",
+                    "value": 26
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "band-rotational-punch",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 9
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "club-speed-swing",
+                  "sets": 3,
+                  "target": {
+                    "kind": "reps",
+                    "value": 11
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "reverse-lunge",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 11
+                  },
+                  "restSeconds": 20,
+                  "note": null
+                },
+                {
+                  "exerciseID": "single-leg-glute-bridge",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 11
+                  },
+                  "restSeconds": 20,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-anti-rotation-press",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 11
+                  },
+                  "restSeconds": 20,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "finisher",
+              "prescriptions": [
+                {
+                  "exerciseID": "skater-hop",
+                  "sets": 4,
+                  "target": {
+                    "kind": "reps",
+                    "value": 22
+                  },
+                  "restSeconds": 20,
+                  "note": "Quick, light feet -- this is speed work, not a grind."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "osp-w6d2",
+          "name": "Single-Leg Strength -- Week 6",
+          "estimatedMinutes": 41,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "standing-hamstring-sweep",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "half-kneeling-ankle-rock",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "seated-figure-four",
+                  "sets": 1,
+                  "target": {
+                    "kind": "secondsPerSide",
+                    "value": 26
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "rfe-split-squat",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 11
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "single-leg-rdl",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 11
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "lateral-bound",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 9
+                  },
+                  "restSeconds": 20,
+                  "note": null
+                },
+                {
+                  "exerciseID": "side-plank",
+                  "sets": 3,
+                  "target": {
+                    "kind": "secondsPerSide",
+                    "value": 32
+                  },
+                  "restSeconds": 20,
+                  "note": null
+                },
+                {
+                  "exerciseID": "single-leg-balance-club-reach",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 11
+                  },
+                  "restSeconds": 20,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "finisher",
+              "prescriptions": [
+                {
+                  "exerciseID": "split-jump",
+                  "sets": 4,
+                  "target": {
+                    "kind": "reps",
+                    "value": 18
+                  },
+                  "restSeconds": 20,
+                  "note": "Land soft -- control beats height here."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "osp-w6d3",
+          "name": "Push/Pull and Core -- Week 6",
+          "estimatedMinutes": 38,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "cat-cow",
+                  "sets": 1,
+                  "target": {
+                    "kind": "reps",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-shoulder-pass-through",
+                  "sets": 1,
+                  "target": {
+                    "kind": "reps",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "wall-slide",
+                  "sets": 1,
+                  "target": {
+                    "kind": "reps",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "band-hip-hinge-snap",
+                  "sets": 3,
+                  "target": {
+                    "kind": "reps",
+                    "value": 13
+                  },
+                  "restSeconds": 20,
+                  "note": null
+                },
+                {
+                  "exerciseID": "tempo-push-up",
+                  "sets": 3,
+                  "target": {
+                    "kind": "reps",
+                    "value": 8
+                  },
+                  "restSeconds": 30,
+                  "note": "Slow four-count down -- fewer reps is expected at this tempo."
+                },
+                {
+                  "exerciseID": "band-row",
+                  "sets": 3,
+                  "target": {
+                    "kind": "reps",
+                    "value": 13
+                  },
+                  "restSeconds": 20,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-face-pull",
+                  "sets": 3,
+                  "target": {
+                    "kind": "reps",
+                    "value": 13
+                  },
+                  "restSeconds": 20,
+                  "note": null
+                },
+                {
+                  "exerciseID": "front-plank-reach",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 9
+                  },
+                  "restSeconds": 20,
+                  "note": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "osp-w7d1",
+          "name": "Rotational Power -- Week 7",
+          "estimatedMinutes": 43,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "worlds-greatest-stretch",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "quadruped-tspine-rotation",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "deep-squat-hold",
+                  "sets": 1,
+                  "target": {
+                    "kind": "seconds",
+                    "value": 26
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "band-rotational-punch",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "club-speed-swing",
+                  "sets": 3,
+                  "target": {
+                    "kind": "reps",
+                    "value": 12
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "reverse-lunge",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 12
+                  },
+                  "restSeconds": 20,
+                  "note": null
+                },
+                {
+                  "exerciseID": "single-leg-glute-bridge",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 12
+                  },
+                  "restSeconds": 20,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-anti-rotation-press",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 12
+                  },
+                  "restSeconds": 20,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "finisher",
+              "prescriptions": [
+                {
+                  "exerciseID": "skater-hop",
+                  "sets": 4,
+                  "target": {
+                    "kind": "reps",
+                    "value": 24
+                  },
+                  "restSeconds": 20,
+                  "note": "Quick, light feet -- this is speed work, not a grind."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "osp-w7d2",
+          "name": "Single-Leg Strength -- Week 7",
+          "estimatedMinutes": 42,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "standing-hamstring-sweep",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "half-kneeling-ankle-rock",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "seated-figure-four",
+                  "sets": 1,
+                  "target": {
+                    "kind": "secondsPerSide",
+                    "value": 26
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "rfe-split-squat",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 12
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "single-leg-rdl",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 12
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "lateral-bound",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 20,
+                  "note": null
+                },
+                {
+                  "exerciseID": "side-plank",
+                  "sets": 3,
+                  "target": {
+                    "kind": "secondsPerSide",
+                    "value": 36
+                  },
+                  "restSeconds": 20,
+                  "note": null
+                },
+                {
+                  "exerciseID": "single-leg-balance-club-reach",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 12
+                  },
+                  "restSeconds": 20,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "finisher",
+              "prescriptions": [
+                {
+                  "exerciseID": "split-jump",
+                  "sets": 4,
+                  "target": {
+                    "kind": "reps",
+                    "value": 20
+                  },
+                  "restSeconds": 20,
+                  "note": "Land soft -- control beats height here."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "osp-w7d3",
+          "name": "Push/Pull and Core -- Week 7",
+          "estimatedMinutes": 38,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "cat-cow",
+                  "sets": 1,
+                  "target": {
+                    "kind": "reps",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-shoulder-pass-through",
+                  "sets": 1,
+                  "target": {
+                    "kind": "reps",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "wall-slide",
+                  "sets": 1,
+                  "target": {
+                    "kind": "reps",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "band-hip-hinge-snap",
+                  "sets": 3,
+                  "target": {
+                    "kind": "reps",
+                    "value": 14
+                  },
+                  "restSeconds": 20,
+                  "note": null
+                },
+                {
+                  "exerciseID": "tempo-push-up",
+                  "sets": 3,
+                  "target": {
+                    "kind": "reps",
+                    "value": 9
+                  },
+                  "restSeconds": 30,
+                  "note": "Slow four-count down -- fewer reps is expected at this tempo."
+                },
+                {
+                  "exerciseID": "band-row",
+                  "sets": 3,
+                  "target": {
+                    "kind": "reps",
+                    "value": 14
+                  },
+                  "restSeconds": 20,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-face-pull",
+                  "sets": 3,
+                  "target": {
+                    "kind": "reps",
+                    "value": 14
+                  },
+                  "restSeconds": 20,
+                  "note": null
+                },
+                {
+                  "exerciseID": "front-plank-reach",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 20,
+                  "note": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "osp-w8d1",
+          "name": "Rotational Power -- Week 8",
+          "estimatedMinutes": 44,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "worlds-greatest-stretch",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "quadruped-tspine-rotation",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "deep-squat-hold",
+                  "sets": 1,
+                  "target": {
+                    "kind": "seconds",
+                    "value": 26
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "band-rotational-punch",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 11
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "club-speed-swing",
+                  "sets": 3,
+                  "target": {
+                    "kind": "reps",
+                    "value": 13
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "reverse-lunge",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 13
+                  },
+                  "restSeconds": 20,
+                  "note": null
+                },
+                {
+                  "exerciseID": "single-leg-glute-bridge",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 13
+                  },
+                  "restSeconds": 20,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-anti-rotation-press",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 13
+                  },
+                  "restSeconds": 20,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "finisher",
+              "prescriptions": [
+                {
+                  "exerciseID": "skater-hop",
+                  "sets": 4,
+                  "target": {
+                    "kind": "reps",
+                    "value": 26
+                  },
+                  "restSeconds": 20,
+                  "note": "Quick, light feet -- this is speed work, not a grind."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "osp-w8d2",
+          "name": "Single-Leg Strength -- Week 8",
+          "estimatedMinutes": 43,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "standing-hamstring-sweep",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "half-kneeling-ankle-rock",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "seated-figure-four",
+                  "sets": 1,
+                  "target": {
+                    "kind": "secondsPerSide",
+                    "value": 26
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "rfe-split-squat",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 13
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "single-leg-rdl",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 13
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "lateral-bound",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 11
+                  },
+                  "restSeconds": 20,
+                  "note": null
+                },
+                {
+                  "exerciseID": "side-plank",
+                  "sets": 3,
+                  "target": {
+                    "kind": "secondsPerSide",
+                    "value": 40
+                  },
+                  "restSeconds": 20,
+                  "note": null
+                },
+                {
+                  "exerciseID": "single-leg-balance-club-reach",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 13
+                  },
+                  "restSeconds": 20,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "finisher",
+              "prescriptions": [
+                {
+                  "exerciseID": "split-jump",
+                  "sets": 4,
+                  "target": {
+                    "kind": "reps",
+                    "value": 22
+                  },
+                  "restSeconds": 20,
+                  "note": "Land soft -- control beats height here."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "osp-w8d3",
+          "name": "Push/Pull and Core -- Week 8",
+          "estimatedMinutes": 39,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "cat-cow",
+                  "sets": 1,
+                  "target": {
+                    "kind": "reps",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-shoulder-pass-through",
+                  "sets": 1,
+                  "target": {
+                    "kind": "reps",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "wall-slide",
+                  "sets": 1,
+                  "target": {
+                    "kind": "reps",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "band-hip-hinge-snap",
+                  "sets": 3,
+                  "target": {
+                    "kind": "reps",
+                    "value": 15
+                  },
+                  "restSeconds": 20,
+                  "note": null
+                },
+                {
+                  "exerciseID": "single-arm-biased-push-up",
+                  "sets": 3,
+                  "target": {
+                    "kind": "reps",
+                    "value": 6
+                  },
+                  "restSeconds": 30,
+                  "note": "Alternate the biased side each set; this replaces the standard push-up from here."
+                },
+                {
+                  "exerciseID": "band-row",
+                  "sets": 3,
+                  "target": {
+                    "kind": "reps",
+                    "value": 15
+                  },
+                  "restSeconds": 20,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-face-pull",
+                  "sets": 3,
+                  "target": {
+                    "kind": "reps",
+                    "value": 15
+                  },
+                  "restSeconds": 20,
+                  "note": null
+                },
+                {
+                  "exerciseID": "front-plank-reach",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 11
+                  },
+                  "restSeconds": 20,
+                  "note": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "in-season-maintenance",
+      "title": "In-Season Maintenance",
+      "subtitle": "Keep what you built, stay fresh for Saturday",
+      "weeks": 4,
+      "sessionsPerWeek": 2,
+      "whoThisIsFor": "For the season itself: two short sessions a week that hold the power and strength you built in the off-season without leaving you sore for your round. Repeat this block for as long as you're playing.",
+      "isRepeatable": true,
+      "sessions": [
+        {
+          "id": "ism-w1d1",
+          "name": "Power and Single-Leg Maintenance",
+          "estimatedMinutes": 27,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "worlds-greatest-stretch",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 6
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "quadruped-tspine-rotation",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "band-rotational-punch",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 4
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "club-speed-swing",
+                  "sets": 2,
+                  "target": {
+                    "kind": "reps",
+                    "value": 5
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "rfe-split-squat",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 5
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "single-leg-rdl",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 5
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-anti-rotation-press",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 5
+                  },
+                  "restSeconds": 25,
+                  "note": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ism-w1d2",
+          "name": "Push/Pull and Core Maintenance",
+          "estimatedMinutes": 26,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "cat-cow",
+                  "sets": 1,
+                  "target": {
+                    "kind": "reps",
+                    "value": 8
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-shoulder-pass-through",
+                  "sets": 1,
+                  "target": {
+                    "kind": "reps",
+                    "value": 8
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "push-up",
+                  "sets": 2,
+                  "target": {
+                    "kind": "reps",
+                    "value": 5
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-row",
+                  "sets": 2,
+                  "target": {
+                    "kind": "reps",
+                    "value": 7
+                  },
+                  "restSeconds": 25,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-face-pull",
+                  "sets": 2,
+                  "target": {
+                    "kind": "reps",
+                    "value": 7
+                  },
+                  "restSeconds": 25,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-hip-hinge-snap",
+                  "sets": 2,
+                  "target": {
+                    "kind": "reps",
+                    "value": 7
+                  },
+                  "restSeconds": 25,
+                  "note": null
+                },
+                {
+                  "exerciseID": "front-plank-reach",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 4
+                  },
+                  "restSeconds": 25,
+                  "note": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ism-w2d1",
+          "name": "Power and Single-Leg Maintenance",
+          "estimatedMinutes": 27,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "worlds-greatest-stretch",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 6
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "quadruped-tspine-rotation",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "band-rotational-punch",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 4
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "club-speed-swing",
+                  "sets": 2,
+                  "target": {
+                    "kind": "reps",
+                    "value": 5
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "rfe-split-squat",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 5
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "single-leg-rdl",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 5
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-anti-rotation-press",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 5
+                  },
+                  "restSeconds": 25,
+                  "note": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ism-w2d2",
+          "name": "Push/Pull and Core Maintenance",
+          "estimatedMinutes": 26,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "cat-cow",
+                  "sets": 1,
+                  "target": {
+                    "kind": "reps",
+                    "value": 8
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-shoulder-pass-through",
+                  "sets": 1,
+                  "target": {
+                    "kind": "reps",
+                    "value": 8
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "push-up",
+                  "sets": 2,
+                  "target": {
+                    "kind": "reps",
+                    "value": 5
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-row",
+                  "sets": 2,
+                  "target": {
+                    "kind": "reps",
+                    "value": 7
+                  },
+                  "restSeconds": 25,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-face-pull",
+                  "sets": 2,
+                  "target": {
+                    "kind": "reps",
+                    "value": 7
+                  },
+                  "restSeconds": 25,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-hip-hinge-snap",
+                  "sets": 2,
+                  "target": {
+                    "kind": "reps",
+                    "value": 7
+                  },
+                  "restSeconds": 25,
+                  "note": null
+                },
+                {
+                  "exerciseID": "front-plank-reach",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 4
+                  },
+                  "restSeconds": 25,
+                  "note": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ism-w3d1",
+          "name": "Power and Single-Leg Maintenance",
+          "estimatedMinutes": 27,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "worlds-greatest-stretch",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 6
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "quadruped-tspine-rotation",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "band-rotational-punch",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 4
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "club-speed-swing",
+                  "sets": 2,
+                  "target": {
+                    "kind": "reps",
+                    "value": 5
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "rfe-split-squat",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 5
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "single-leg-rdl",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 5
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-anti-rotation-press",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 5
+                  },
+                  "restSeconds": 25,
+                  "note": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ism-w3d2",
+          "name": "Push/Pull and Core Maintenance",
+          "estimatedMinutes": 26,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "cat-cow",
+                  "sets": 1,
+                  "target": {
+                    "kind": "reps",
+                    "value": 8
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-shoulder-pass-through",
+                  "sets": 1,
+                  "target": {
+                    "kind": "reps",
+                    "value": 8
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "push-up",
+                  "sets": 2,
+                  "target": {
+                    "kind": "reps",
+                    "value": 5
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-row",
+                  "sets": 2,
+                  "target": {
+                    "kind": "reps",
+                    "value": 7
+                  },
+                  "restSeconds": 25,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-face-pull",
+                  "sets": 2,
+                  "target": {
+                    "kind": "reps",
+                    "value": 7
+                  },
+                  "restSeconds": 25,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-hip-hinge-snap",
+                  "sets": 2,
+                  "target": {
+                    "kind": "reps",
+                    "value": 7
+                  },
+                  "restSeconds": 25,
+                  "note": null
+                },
+                {
+                  "exerciseID": "front-plank-reach",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 4
+                  },
+                  "restSeconds": 25,
+                  "note": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ism-w4d1",
+          "name": "Power and Single-Leg Maintenance",
+          "estimatedMinutes": 27,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "worlds-greatest-stretch",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 6
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "quadruped-tspine-rotation",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "band-rotational-punch",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 4
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "club-speed-swing",
+                  "sets": 2,
+                  "target": {
+                    "kind": "reps",
+                    "value": 5
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "rfe-split-squat",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 5
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "single-leg-rdl",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 5
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-anti-rotation-press",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 5
+                  },
+                  "restSeconds": 25,
+                  "note": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ism-w4d2",
+          "name": "Push/Pull and Core Maintenance",
+          "estimatedMinutes": 26,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "cat-cow",
+                  "sets": 1,
+                  "target": {
+                    "kind": "reps",
+                    "value": 8
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-shoulder-pass-through",
+                  "sets": 1,
+                  "target": {
+                    "kind": "reps",
+                    "value": 8
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "push-up",
+                  "sets": 2,
+                  "target": {
+                    "kind": "reps",
+                    "value": 5
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-row",
+                  "sets": 2,
+                  "target": {
+                    "kind": "reps",
+                    "value": 7
+                  },
+                  "restSeconds": 25,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-face-pull",
+                  "sets": 2,
+                  "target": {
+                    "kind": "reps",
+                    "value": 7
+                  },
+                  "restSeconds": 25,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-hip-hinge-snap",
+                  "sets": 2,
+                  "target": {
+                    "kind": "reps",
+                    "value": 7
+                  },
+                  "restSeconds": 25,
+                  "note": null
+                },
+                {
+                  "exerciseID": "front-plank-reach",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 4
+                  },
+                  "restSeconds": 25,
                   "note": null
                 }
               ]
