@@ -10,7 +10,7 @@ struct RootTabView: View {
                 ProgramListView()
             }
             Tab("Progress", systemImage: "chart.xyaxis.line") {
-                Text("Progress")
+                ProgressTabView()
             }
             Tab("Settings", systemImage: "gearshape") {
                 Text("Settings")
