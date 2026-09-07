@@ -72,4 +72,19 @@ import Testing
         #expect(ProgramEngine.nextSession(program: empty, completions: []) == nil)
         #expect(ProgramEngine.isComplete(program: empty, completions: []))
     }
+
+    @Test func staleRecordsCannotFakeCompletion() throws {
+        let stale = [
+            CompletionRecord(sessionID: "s1", isFinished: true),
+            CompletionRecord(sessionID: "s2", isFinished: true),
+            CompletionRecord(sessionID: "removed-in-a-content-update", isFinished: true)
+        ]
+        #expect(ProgramEngine.isComplete(program: program, completions: stale) == false)
+        let progress = ProgramEngine.progress(program: program, completions: stale)
+        #expect(progress.completed == 2)
+        #expect(progress.total == 3)
+        let next = try #require(ProgramEngine.nextSession(program: program, completions: stale))
+        #expect(next.index == 2)
+        #expect(next.session.id == "s3")
+    }
 }
