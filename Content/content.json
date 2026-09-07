@@ -206,7 +206,7 @@
         "Elbows press knees out",
         "Hold and breathe"
       ],
-      "swingRationale": "Builds the hip and ankle mobility behind a stable, athletic setup posture that holds up through the whole swing.",
+      "swingRationale": "Hips and ankles that cannot sit into a squat are why golfers stand up out of posture on the way down, turning a solid strike into a thin, bladed shot.",
       "demoURL": "https://www.youtube.com/results?search_query=deep+squat+hold+mobility+exercise",
       "isBenchmark": false
     },
@@ -350,7 +350,7 @@
         "Match effort on both sides",
         "Rest fully between reps"
       ],
-      "swingRationale": "Trains the non-dominant rotational pattern, correcting the strength imbalance that causes an over-the-top move for many golfers.",
+      "swingRationale": "Trains the rotational direction most golfers never load, so power is built on both sides instead of just the dominant swing pattern.",
       "demoURL": "https://www.youtube.com/results?search_query=reverse+direction+speed+swing+golf+training",
       "isBenchmark": false
     },
@@ -567,7 +567,7 @@
       "name": "Single-Leg RDL",
       "category": "strength",
       "equipment": "none",
-      "setup": "Stand on one leg with a soft knee bend, holding light weight or nothing in the opposite hand.",
+      "setup": "Stand tall on one leg with a soft bend in the knee, arms relaxed and free at your sides.",
       "cues": [
         "Hinge forward, extend the back leg",
         "Keep hips square to the floor",
@@ -583,14 +583,14 @@
       "name": "Reverse Lunge",
       "category": "strength",
       "equipment": "none",
-      "setup": "Stand tall with feet hip-width apart, hands on your hips or holding light weight.",
+      "setup": "Stand tall with feet hip-width apart, hands resting on your hips.",
       "cues": [
         "Step one foot straight back",
         "Lower the back knee toward the floor",
         "Keep front shin vertical",
         "Push back to standing"
       ],
-      "swingRationale": "Builds single-leg strength and control through the range the lead leg moves through as it braces at impact.",
+      "swingRationale": "A lead knee that buckles inward instead of holding firm is why contact goes fat or thin instead of ball-then-turf.",
       "demoURL": "https://www.youtube.com/results?search_query=reverse+lunge+exercise+technique",
       "isBenchmark": false
     },
@@ -654,7 +654,7 @@
         "Lower slowly past level",
         "Keep knees straight throughout"
       ],
-      "swingRationale": "Ankle and calf strength keeps the feet stable as ground force transfers up through the legs into the swing.",
+      "swingRationale": "A trail foot that rolls off the inside edge on the way down leaks the ground force that would have gone into ball speed.",
       "demoURL": "https://www.youtube.com/results?search_query=calf+raise+exercise+form+technique",
       "isBenchmark": false
     },
@@ -857,6 +857,26 @@
                   "note": "Pause two seconds at the end of each switch."
                 },
                 {
+                  "exerciseID": "dead-bug",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 45,
+                  "note": null
+                },
+                {
+                  "exerciseID": "standing-hip-airplane",
+                  "sets": 2,
+                  "target": {
+                    "kind": "secondsPerSide",
+                    "value": 20
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
                   "exerciseID": "open-book-tspine",
                   "sets": 2,
                   "target": {
@@ -882,26 +902,6 @@
                   "target": {
                     "kind": "repsPerSide",
                     "value": 8
-                  },
-                  "restSeconds": 30,
-                  "note": null
-                },
-                {
-                  "exerciseID": "dead-bug",
-                  "sets": 2,
-                  "target": {
-                    "kind": "repsPerSide",
-                    "value": 8
-                  },
-                  "restSeconds": 45,
-                  "note": null
-                },
-                {
-                  "exerciseID": "standing-hip-airplane",
-                  "sets": 2,
-                  "target": {
-                    "kind": "secondsPerSide",
-                    "value": 20
                   },
                   "restSeconds": 30,
                   "note": null
@@ -954,6 +954,26 @@
                   "note": null
                 },
                 {
+                  "exerciseID": "bird-dog",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 45,
+                  "note": null
+                },
+                {
+                  "exerciseID": "single-leg-balance-club-reach",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
                   "exerciseID": "seated-figure-four",
                   "sets": 2,
                   "target": {
@@ -975,26 +995,6 @@
                 },
                 {
                   "exerciseID": "thread-the-needle",
-                  "sets": 2,
-                  "target": {
-                    "kind": "repsPerSide",
-                    "value": 8
-                  },
-                  "restSeconds": 30,
-                  "note": null
-                },
-                {
-                  "exerciseID": "bird-dog",
-                  "sets": 2,
-                  "target": {
-                    "kind": "repsPerSide",
-                    "value": 8
-                  },
-                  "restSeconds": 45,
-                  "note": null
-                },
-                {
-                  "exerciseID": "single-leg-balance-club-reach",
                   "sets": 2,
                   "target": {
                     "kind": "repsPerSide",
@@ -1051,16 +1051,6 @@
                   "note": null
                 },
                 {
-                  "exerciseID": "club-overhead-side-bend",
-                  "sets": 2,
-                  "target": {
-                    "kind": "repsPerSide",
-                    "value": 8
-                  },
-                  "restSeconds": 30,
-                  "note": null
-                },
-                {
                   "exerciseID": "deep-squat-hold",
                   "sets": 2,
                   "target": {
@@ -1071,7 +1061,17 @@
                   "note": null
                 },
                 {
-                  "exerciseID": "lying-leg-lowering",
+                  "exerciseID": "side-plank",
+                  "sets": 2,
+                  "target": {
+                    "kind": "secondsPerSide",
+                    "value": 20
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "club-overhead-side-bend",
                   "sets": 2,
                   "target": {
                     "kind": "repsPerSide",
@@ -1081,11 +1081,11 @@
                   "note": null
                 },
                 {
-                  "exerciseID": "side-plank",
+                  "exerciseID": "lying-leg-lowering",
                   "sets": 2,
                   "target": {
-                    "kind": "secondsPerSide",
-                    "value": 20
+                    "kind": "repsPerSide",
+                    "value": 8
                   },
                   "restSeconds": 30,
                   "note": null
@@ -1106,8 +1106,8 @@
         },
         {
           "id": "mf-w2d1",
-          "name": "Hips and T-Spine A",
-          "estimatedMinutes": 23,
+          "name": "Hips and T-Spine A -- Week 2",
+          "estimatedMinutes": 24,
           "blocks": [
             {
               "kind": "warmup",
@@ -1142,7 +1142,27 @@
                   "sets": 2,
                   "target": {
                     "kind": "reps",
-                    "value": 10
+                    "value": 12
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "dead-bug",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 45,
+                  "note": null
+                },
+                {
+                  "exerciseID": "standing-hip-airplane",
+                  "sets": 2,
+                  "target": {
+                    "kind": "secondsPerSide",
+                    "value": 25
                   },
                   "restSeconds": 30,
                   "note": null
@@ -1176,26 +1196,6 @@
                   },
                   "restSeconds": 30,
                   "note": null
-                },
-                {
-                  "exerciseID": "dead-bug",
-                  "sets": 3,
-                  "target": {
-                    "kind": "repsPerSide",
-                    "value": 8
-                  },
-                  "restSeconds": 45,
-                  "note": null
-                },
-                {
-                  "exerciseID": "standing-hip-airplane",
-                  "sets": 2,
-                  "target": {
-                    "kind": "secondsPerSide",
-                    "value": 20
-                  },
-                  "restSeconds": 30,
-                  "note": null
                 }
               ]
             }
@@ -1203,7 +1203,7 @@
         },
         {
           "id": "mf-w2d2",
-          "name": "Ankles and Balance B",
+          "name": "Ankles and Balance B -- Week 2",
           "estimatedMinutes": 23,
           "blocks": [
             {
@@ -1245,11 +1245,31 @@
                   "note": null
                 },
                 {
+                  "exerciseID": "bird-dog",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 45,
+                  "note": null
+                },
+                {
+                  "exerciseID": "single-leg-balance-club-reach",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
                   "exerciseID": "seated-figure-four",
                   "sets": 2,
                   "target": {
                     "kind": "secondsPerSide",
-                    "value": 25
+                    "value": 20
                   },
                   "restSeconds": 30,
                   "note": null
@@ -1273,26 +1293,6 @@
                   },
                   "restSeconds": 30,
                   "note": null
-                },
-                {
-                  "exerciseID": "bird-dog",
-                  "sets": 3,
-                  "target": {
-                    "kind": "repsPerSide",
-                    "value": 8
-                  },
-                  "restSeconds": 45,
-                  "note": null
-                },
-                {
-                  "exerciseID": "single-leg-balance-club-reach",
-                  "sets": 2,
-                  "target": {
-                    "kind": "repsPerSide",
-                    "value": 8
-                  },
-                  "restSeconds": 30,
-                  "note": null
                 }
               ]
             }
@@ -1300,7 +1300,7 @@
         },
         {
           "id": "mf-w2d3",
-          "name": "Full-Body Flow C",
+          "name": "Full-Body Flow C -- Week 2",
           "estimatedMinutes": 25,
           "blocks": [
             {
@@ -1336,16 +1336,6 @@
                   "sets": 2,
                   "target": {
                     "kind": "repsPerSide",
-                    "value": 6
-                  },
-                  "restSeconds": 30,
-                  "note": null
-                },
-                {
-                  "exerciseID": "club-overhead-side-bend",
-                  "sets": 2,
-                  "target": {
-                    "kind": "repsPerSide",
                     "value": 8
                   },
                   "restSeconds": 30,
@@ -1362,7 +1352,17 @@
                   "note": null
                 },
                 {
-                  "exerciseID": "lying-leg-lowering",
+                  "exerciseID": "side-plank",
+                  "sets": 2,
+                  "target": {
+                    "kind": "secondsPerSide",
+                    "value": 25
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "club-overhead-side-bend",
                   "sets": 2,
                   "target": {
                     "kind": "repsPerSide",
@@ -1372,11 +1372,11 @@
                   "note": null
                 },
                 {
-                  "exerciseID": "side-plank",
+                  "exerciseID": "lying-leg-lowering",
                   "sets": 2,
                   "target": {
-                    "kind": "secondsPerSide",
-                    "value": 25
+                    "kind": "repsPerSide",
+                    "value": 8
                   },
                   "restSeconds": 30,
                   "note": null
@@ -1397,7 +1397,7 @@
         },
         {
           "id": "mf-w3d1",
-          "name": "Hips and T-Spine A -- Extended",
+          "name": "Hips and T-Spine A -- Week 3",
           "estimatedMinutes": 25,
           "blocks": [
             {
@@ -1433,7 +1433,27 @@
                   "sets": 3,
                   "target": {
                     "kind": "reps",
+                    "value": 12
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "dead-bug",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
                     "value": 10
+                  },
+                  "restSeconds": 45,
+                  "note": null
+                },
+                {
+                  "exerciseID": "standing-hip-airplane",
+                  "sets": 3,
+                  "target": {
+                    "kind": "secondsPerSide",
+                    "value": 25
                   },
                   "restSeconds": 30,
                   "note": null
@@ -1467,26 +1487,6 @@
                   },
                   "restSeconds": 30,
                   "note": null
-                },
-                {
-                  "exerciseID": "dead-bug",
-                  "sets": 3,
-                  "target": {
-                    "kind": "repsPerSide",
-                    "value": 10
-                  },
-                  "restSeconds": 45,
-                  "note": null
-                },
-                {
-                  "exerciseID": "standing-hip-airplane",
-                  "sets": 3,
-                  "target": {
-                    "kind": "secondsPerSide",
-                    "value": 25
-                  },
-                  "restSeconds": 30,
-                  "note": null
                 }
               ]
             }
@@ -1494,7 +1494,7 @@
         },
         {
           "id": "mf-w3d2",
-          "name": "Ankles and Balance B -- Extended",
+          "name": "Ankles and Balance B -- Week 3",
           "estimatedMinutes": 25,
           "blocks": [
             {
@@ -1536,6 +1536,26 @@
                   "note": null
                 },
                 {
+                  "exerciseID": "bird-dog",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 45,
+                  "note": null
+                },
+                {
+                  "exerciseID": "single-leg-balance-club-reach",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
                   "exerciseID": "seated-figure-four",
                   "sets": 3,
                   "target": {
@@ -1564,26 +1584,6 @@
                   },
                   "restSeconds": 30,
                   "note": null
-                },
-                {
-                  "exerciseID": "bird-dog",
-                  "sets": 3,
-                  "target": {
-                    "kind": "repsPerSide",
-                    "value": 10
-                  },
-                  "restSeconds": 45,
-                  "note": null
-                },
-                {
-                  "exerciseID": "single-leg-balance-club-reach",
-                  "sets": 3,
-                  "target": {
-                    "kind": "repsPerSide",
-                    "value": 8
-                  },
-                  "restSeconds": 30,
-                  "note": null
                 }
               ]
             }
@@ -1591,7 +1591,7 @@
         },
         {
           "id": "mf-w3d3",
-          "name": "Full-Body Flow C -- Extended",
+          "name": "Full-Body Flow C -- Week 3",
           "estimatedMinutes": 27,
           "blocks": [
             {
@@ -1627,16 +1627,6 @@
                   "sets": 3,
                   "target": {
                     "kind": "repsPerSide",
-                    "value": 6
-                  },
-                  "restSeconds": 30,
-                  "note": null
-                },
-                {
-                  "exerciseID": "club-overhead-side-bend",
-                  "sets": 3,
-                  "target": {
-                    "kind": "repsPerSide",
                     "value": 8
                   },
                   "restSeconds": 30,
@@ -1653,21 +1643,31 @@
                   "note": null
                 },
                 {
-                  "exerciseID": "lying-leg-lowering",
-                  "sets": 3,
-                  "target": {
-                    "kind": "repsPerSide",
-                    "value": 10
-                  },
-                  "restSeconds": 30,
-                  "note": null
-                },
-                {
                   "exerciseID": "side-plank",
                   "sets": 3,
                   "target": {
                     "kind": "secondsPerSide",
                     "value": 25
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "club-overhead-side-bend",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "lying-leg-lowering",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
                   },
                   "restSeconds": 30,
                   "note": null
@@ -1688,7 +1688,7 @@
         },
         {
           "id": "mf-w4d1",
-          "name": "Hips and T-Spine A -- Extended",
+          "name": "Hips and T-Spine A -- Week 4",
           "estimatedMinutes": 26,
           "blocks": [
             {
@@ -1724,7 +1724,27 @@
                   "sets": 3,
                   "target": {
                     "kind": "reps",
+                    "value": 14
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "dead-bug",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
                     "value": 12
+                  },
+                  "restSeconds": 45,
+                  "note": null
+                },
+                {
+                  "exerciseID": "standing-hip-airplane",
+                  "sets": 3,
+                  "target": {
+                    "kind": "secondsPerSide",
+                    "value": 30
                   },
                   "restSeconds": 30,
                   "note": null
@@ -1758,26 +1778,6 @@
                   },
                   "restSeconds": 30,
                   "note": null
-                },
-                {
-                  "exerciseID": "dead-bug",
-                  "sets": 3,
-                  "target": {
-                    "kind": "repsPerSide",
-                    "value": 10
-                  },
-                  "restSeconds": 45,
-                  "note": null
-                },
-                {
-                  "exerciseID": "standing-hip-airplane",
-                  "sets": 3,
-                  "target": {
-                    "kind": "secondsPerSide",
-                    "value": 25
-                  },
-                  "restSeconds": 30,
-                  "note": null
                 }
               ]
             }
@@ -1785,7 +1785,7 @@
         },
         {
           "id": "mf-w4d2",
-          "name": "Ankles and Balance B -- Extended",
+          "name": "Ankles and Balance B -- Week 4",
           "estimatedMinutes": 26,
           "blocks": [
             {
@@ -1827,6 +1827,26 @@
                   "note": null
                 },
                 {
+                  "exerciseID": "bird-dog",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 12
+                  },
+                  "restSeconds": 45,
+                  "note": null
+                },
+                {
+                  "exerciseID": "single-leg-balance-club-reach",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 12
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
                   "exerciseID": "seated-figure-four",
                   "sets": 3,
                   "target": {
@@ -1855,26 +1875,6 @@
                   },
                   "restSeconds": 30,
                   "note": null
-                },
-                {
-                  "exerciseID": "bird-dog",
-                  "sets": 3,
-                  "target": {
-                    "kind": "repsPerSide",
-                    "value": 10
-                  },
-                  "restSeconds": 45,
-                  "note": null
-                },
-                {
-                  "exerciseID": "single-leg-balance-club-reach",
-                  "sets": 3,
-                  "target": {
-                    "kind": "repsPerSide",
-                    "value": 10
-                  },
-                  "restSeconds": 30,
-                  "note": null
                 }
               ]
             }
@@ -1882,7 +1882,7 @@
         },
         {
           "id": "mf-w4d3",
-          "name": "Full-Body Flow C -- Extended",
+          "name": "Full-Body Flow C -- Week 4",
           "estimatedMinutes": 28,
           "blocks": [
             {
@@ -1918,16 +1918,6 @@
                   "sets": 3,
                   "target": {
                     "kind": "repsPerSide",
-                    "value": 8
-                  },
-                  "restSeconds": 30,
-                  "note": null
-                },
-                {
-                  "exerciseID": "club-overhead-side-bend",
-                  "sets": 3,
-                  "target": {
-                    "kind": "repsPerSide",
                     "value": 10
                   },
                   "restSeconds": 30,
@@ -1944,7 +1934,17 @@
                   "note": null
                 },
                 {
-                  "exerciseID": "lying-leg-lowering",
+                  "exerciseID": "side-plank",
+                  "sets": 3,
+                  "target": {
+                    "kind": "secondsPerSide",
+                    "value": 30
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "club-overhead-side-bend",
                   "sets": 3,
                   "target": {
                     "kind": "repsPerSide",
@@ -1954,11 +1954,11 @@
                   "note": null
                 },
                 {
-                  "exerciseID": "side-plank",
+                  "exerciseID": "lying-leg-lowering",
                   "sets": 3,
                   "target": {
-                    "kind": "secondsPerSide",
-                    "value": 30
+                    "kind": "repsPerSide",
+                    "value": 12
                   },
                   "restSeconds": 30,
                   "note": null
