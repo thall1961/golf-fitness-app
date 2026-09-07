@@ -132,13 +132,3 @@ struct NextSessionCard: View {
         }
     }
 }
-
-// TEMPORARY — replaced by Features/Player/PlayerView.swift in Task 10.
-struct PlayerView: View {
-    let session: Session
-    let enrollment: Enrollment
-
-    var body: some View {
-        Text(session.name)
-    }
-}
