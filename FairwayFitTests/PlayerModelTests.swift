@@ -58,6 +58,29 @@ import Testing
         #expect(try context.fetch(FetchDescriptor<SessionCompletion>()).count == 1)
     }
 
+    /// Kills the mutant that drops `!isFinished` from the resume predicate: if the
+    /// only completion on record for this session is finished, the model must start
+    /// a fresh one rather than reopening a session the golfer already finished.
+    @Test func doesNotResumeAFinishedCompletion() throws {
+        let context = try context()
+        let enrollment = Enrollment(programID: "p", startedAt: .now)
+        context.insert(enrollment)
+        let finished = SessionCompletion(sessionID: "s1", startedAt: .now)
+        finished.finishedAt = .now
+        finished.enrollment = enrollment
+        context.insert(finished)
+        try context.save()
+
+        let model = PlayerModel(session: session, enrollment: enrollment, context: context)
+        model.record(setNumber: 1, value: 12, bandLevel: nil)
+
+        let completions = try context.fetch(FetchDescriptor<SessionCompletion>())
+        #expect(completions.count == 2)
+        let unfinished = try #require(completions.first { !$0.isFinished })
+        #expect(unfinished.setLogs.count == 1)
+        #expect(finished.setLogs.isEmpty)
+    }
+
     @Test func recordingASetWritesOneLog() throws {
         let context = try context()
         let enrollment = Enrollment(programID: "p", startedAt: .now)
@@ -130,5 +153,63 @@ import Testing
         let completion = try #require(try context.fetch(FetchDescriptor<SessionCompletion>()).first)
         #expect(completion.isFinished == false)
         #expect(completion.setLogs.count == 1)
+    }
+
+    @Test func recordsTheBandLevelPassedInRatherThanAFixedDefault() throws {
+        let context = try context()
+        let enrollment = Enrollment(programID: "p", startedAt: .now)
+        context.insert(enrollment)
+        let model = PlayerModel(session: session, enrollment: enrollment, context: context)
+
+        model.record(setNumber: 1, value: 8, bandLevel: .heavy)
+
+        let log = try #require(try context.fetch(FetchDescriptor<SetLog>()).first)
+        #expect(log.bandLevel == .heavy)
+    }
+
+    @Test func recordsNoBandLevelWhenNoneIsPassed() throws {
+        let context = try context()
+        let enrollment = Enrollment(programID: "p", startedAt: .now)
+        context.insert(enrollment)
+        let model = PlayerModel(session: session, enrollment: enrollment, context: context)
+
+        model.record(setNumber: 1, value: 8, bandLevel: nil)
+
+        let log = try #require(try context.fetch(FetchDescriptor<SetLog>()).first)
+        #expect(log.bandLevel == nil)
+    }
+
+    @Test func recordedBandLevelReturnsWhatWasLoggedForThisExactSet() throws {
+        let context = try context()
+        let enrollment = Enrollment(programID: "p", startedAt: .now)
+        context.insert(enrollment)
+        let model = PlayerModel(session: session, enrollment: enrollment, context: context)
+        model.advance() // push-up: sets 1...3
+        model.record(setNumber: 1, value: 10, bandLevel: .heavy)
+        model.record(setNumber: 2, value: 10, bandLevel: .light)
+
+        #expect(model.recordedBandLevel(for: model.steps[1], setNumber: 2) == .light)
+    }
+
+    @Test func recordedBandLevelFallsBackToTheMostRecentSetOfTheSameExercise() throws {
+        let context = try context()
+        let enrollment = Enrollment(programID: "p", startedAt: .now)
+        context.insert(enrollment)
+        let model = PlayerModel(session: session, enrollment: enrollment, context: context)
+        model.advance() // push-up: sets 1...3
+        model.record(setNumber: 1, value: 10, bandLevel: .heavy)
+
+        // Set 2 has nothing of its own yet, so it carries forward set 1's choice —
+        // nobody changes bands between sets of the same movement.
+        #expect(model.recordedBandLevel(for: model.steps[1], setNumber: 2) == .heavy)
+    }
+
+    @Test func recordedBandLevelIsNilWhenNothingIsLoggedForThisExercise() throws {
+        let context = try context()
+        let enrollment = Enrollment(programID: "p", startedAt: .now)
+        context.insert(enrollment)
+        let model = PlayerModel(session: session, enrollment: enrollment, context: context)
+
+        #expect(model.recordedBandLevel(for: model.steps[0], setNumber: 1) == nil)
     }
 }

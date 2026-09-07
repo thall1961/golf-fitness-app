@@ -65,6 +65,17 @@ final class PlayerModel {
         return log(for: step, setNumber: setNumber)?.achievedValue
     }
 
+    /// The band level to default a set-entry sheet to: whatever was already logged
+    /// for this exact set, else the most recent one logged for this exercise this
+    /// session (nobody changes bands between sets of the same movement), else nil.
+    func recordedBandLevel(for step: PlayerStep, setNumber: Int) -> BandLevel? {
+        let logsForExercise = completion.setLogs.filter { $0.exerciseID == step.exerciseID }
+        if let exact = logsForExercise.first(where: { $0.setNumber == setNumber })?.bandLevel {
+            return exact
+        }
+        return logsForExercise.sorted { $0.setNumber < $1.setNumber }.compactMap(\.bandLevel).last
+    }
+
     func record(setNumber: Int, value: Int, bandLevel: BandLevel?) {
         guard let step = currentStep else { return }
         let isTimed = step.prescription.target.isTimed

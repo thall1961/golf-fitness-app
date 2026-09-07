@@ -166,25 +166,56 @@ struct SetEntryList: View {
                 .onTapGesture {
                     entry = String(model.loggedValue(setNumber: setNumber)
                                    ?? step.prescription.target.value)
+                    bandLevel = model.recordedBandLevel(for: step, setNumber: setNumber) ?? .medium
                     editing = setNumber
                 }
             }
         }
-        .alert("Set \(editing ?? 0)", isPresented: Binding(
+        .sheet(isPresented: Binding(
             get: { editing != nil },
             set: { if !$0 { editing = nil } }
         )) {
-            TextField(step.prescription.target.isTimed ? "Seconds" : "Reps", text: $entry)
-                .keyboardType(.numberPad)
-            Button("Save") {
-                if let setNumber = editing, let value = Int(entry), value > 0 {
-                    model.record(setNumber: setNumber, value: value,
-                                 bandLevel: exercise.equipment == .band ? bandLevel : nil)
-                    onRecorded()
-                }
-                editing = nil
-            }
-            Button("Cancel", role: .cancel) { editing = nil }
+            setEntrySheet
         }
+    }
+
+    /// A sheet, not an alert — alerts cannot host a Picker, and band exercises need one.
+    private var setEntrySheet: some View {
+        NavigationStack {
+            Form {
+                Section {
+                    TextField(step.prescription.target.isTimed ? "Seconds" : "Reps", text: $entry)
+                        .keyboardType(.numberPad)
+                }
+                if exercise.equipment == .band {
+                    Section("Band") {
+                        Picker("Band", selection: $bandLevel) {
+                            ForEach(BandLevel.allCases, id: \.self) { band in
+                                Text(band.label).tag(band)
+                            }
+                        }
+                        .pickerStyle(.segmented)
+                    }
+                }
+            }
+            .navigationTitle("Set \(editing ?? 0)")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .cancellationAction) {
+                    Button("Cancel") { editing = nil }
+                }
+                ToolbarItem(placement: .confirmationAction) {
+                    Button("Save") {
+                        if let setNumber = editing, let value = Int(entry), value > 0 {
+                            model.record(setNumber: setNumber, value: value,
+                                         bandLevel: exercise.equipment == .band ? bandLevel : nil)
+                            onRecorded()
+                        }
+                        editing = nil
+                    }
+                }
+            }
+        }
+        .presentationDetents([.medium])
     }
 }
