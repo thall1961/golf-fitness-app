@@ -1,6 +1,1983 @@
 {
   "schemaVersion": 1,
   "version": 1,
-  "exercises": [],
-  "programs": []
+  "exercises": [
+    {
+      "id": "ninety-ninety-hip-switch",
+      "name": "90/90 Hip Switch",
+      "category": "mobility",
+      "equipment": "none",
+      "setup": "Sit on the floor with both knees bent at ninety degrees, one leg in front and one out to the side, hands behind you for support.",
+      "cues": [
+        "Chest tall, not rounded",
+        "Knees lead the switch",
+        "Move slowly, no bouncing",
+        "Breathe out at the end"
+      ],
+      "swingRationale": "Locked-up hip internal rotation is why the lead hip stalls and the hands take over through impact.",
+      "demoURL": "https://www.youtube.com/results?search_query=90+90+hip+switch+golf+mobility",
+      "isBenchmark": false
+    },
+    {
+      "id": "open-book-tspine",
+      "name": "Open Book",
+      "category": "mobility",
+      "equipment": "none",
+      "setup": "Lie on your side with knees stacked and bent toward your chest, arms straight out in front at shoulder height.",
+      "cues": [
+        "Reach the top arm across",
+        "Keep knees glued together",
+        "Follow your hand with your eyes",
+        "Control the return"
+      ],
+      "swingRationale": "A t-spine that will not rotate forces the arms to disconnect from the turn, steepening the downswing and causing fat contact.",
+      "demoURL": "https://www.youtube.com/results?search_query=open+book+stretch+thoracic+spine+golf",
+      "isBenchmark": false
+    },
+    {
+      "id": "quadruped-tspine-rotation",
+      "name": "Quadruped T-Spine Rotation",
+      "category": "mobility",
+      "equipment": "none",
+      "setup": "Get on hands and knees, place one hand behind your head with the elbow pointing out to the side.",
+      "cues": [
+        "Rotate elbow toward the ceiling",
+        "Keep hips square to floor",
+        "Eyes track the elbow",
+        "Pause at full rotation"
+      ],
+      "swingRationale": "Restricted thoracic rotation shortens the backswing and pushes golfers to sway laterally instead of turning for width.",
+      "demoURL": "https://www.youtube.com/results?search_query=quadruped+thoracic+rotation+golf+mobility",
+      "isBenchmark": false
+    },
+    {
+      "id": "worlds-greatest-stretch",
+      "name": "World's Greatest Stretch",
+      "category": "mobility",
+      "equipment": "none",
+      "setup": "Start in a long lunge with your front foot forward, back knee off the floor, both hands inside the front foot.",
+      "cues": [
+        "Drop the back hip low",
+        "Rotate the inside elbow up",
+        "Keep front knee stacked over ankle",
+        "Switch sides evenly"
+      ],
+      "swingRationale": "Combines the hip and thoracic mobility golfers need to complete a full backswing turn without early extension.",
+      "demoURL": "https://www.youtube.com/results?search_query=worlds+greatest+stretch+exercise+form",
+      "isBenchmark": false
+    },
+    {
+      "id": "half-kneeling-ankle-rock",
+      "name": "Half-Kneeling Ankle Rock",
+      "category": "mobility",
+      "equipment": "none",
+      "setup": "Kneel on one knee with the other foot flat on the floor in front, hands resting on the front thigh.",
+      "cues": [
+        "Drive the front knee over toes",
+        "Keep the heel glued down",
+        "Rock forward and back",
+        "Feel the front ankle stretch"
+      ],
+      "swingRationale": "A front ankle that cannot dorsiflex forces the lead knee to slide instead of stabilize, leaking power at impact.",
+      "demoURL": "https://www.youtube.com/results?search_query=half+kneeling+ankle+dorsiflexion+mobility",
+      "isBenchmark": false
+    },
+    {
+      "id": "club-shoulder-turn",
+      "name": "Club-Behind-Back Shoulder Turn",
+      "category": "mobility",
+      "equipment": "club",
+      "setup": "Stand in your golf posture with a club held horizontally across your shoulder blades, both forearms resting on top.",
+      "cues": [
+        "Rotate shoulders away from target",
+        "Keep lower body still",
+        "Feel the stretch across the chest",
+        "Return under control"
+      ],
+      "swingRationale": "Isolates shoulder turn from hip turn, the separation that creates torque instead of an all-arms swing.",
+      "demoURL": "https://www.youtube.com/results?search_query=club+behind+back+shoulder+turn+golf+drill",
+      "isBenchmark": false
+    },
+    {
+      "id": "club-overhead-side-bend",
+      "name": "Club Overhead Side Bend",
+      "category": "mobility",
+      "equipment": "club",
+      "setup": "Stand tall holding a club overhead with both hands wide, feet shoulder-width apart.",
+      "cues": [
+        "Reach tall before bending",
+        "Bend straight sideways, not forward",
+        "Keep hips level",
+        "Breathe through the stretch"
+      ],
+      "swingRationale": "Frees the lat and side-bend range that lets the trail shoulder drop under the ball instead of steepening the swing.",
+      "demoURL": "https://www.youtube.com/results?search_query=overhead+side+bend+lat+stretch+golf",
+      "isBenchmark": false
+    },
+    {
+      "id": "seated-figure-four",
+      "name": "Seated Figure Four",
+      "category": "mobility",
+      "equipment": "none",
+      "setup": "Sit tall in a chair, cross one ankle over the opposite knee, keeping the crossed foot flexed.",
+      "cues": [
+        "Hinge forward from the hips",
+        "Keep back flat, not rounded",
+        "Press the crossed knee down gently",
+        "Hold, then switch sides"
+      ],
+      "swingRationale": "Tight glutes limit hip turn on the backswing, a common cause of reverse pivots and thin contact.",
+      "demoURL": "https://www.youtube.com/results?search_query=seated+figure+four+glute+stretch+form",
+      "isBenchmark": false
+    },
+    {
+      "id": "couch-stretch",
+      "name": "Couch Stretch",
+      "category": "mobility",
+      "equipment": "none",
+      "setup": "Kneel in front of a wall or couch with your back shin resting against it, front foot planted ahead of you.",
+      "cues": [
+        "Squeeze the back glute",
+        "Keep ribs stacked over pelvis",
+        "Avoid arching the low back",
+        "Hold, breathe, do not force it"
+      ],
+      "swingRationale": "A short hip flexor blocks the trail hip from extending fully through impact, robbing speed and forcing the low back to compensate.",
+      "demoURL": "https://www.youtube.com/results?search_query=couch+stretch+hip+flexor+exercise",
+      "isBenchmark": false
+    },
+    {
+      "id": "cat-cow",
+      "name": "Cat-Cow",
+      "category": "mobility",
+      "equipment": "none",
+      "setup": "Get on hands and knees with wrists under shoulders and knees under hips.",
+      "cues": [
+        "Round through the spine fully",
+        "Arch and lift the chest",
+        "Move with your breath",
+        "Keep the motion smooth"
+      ],
+      "swingRationale": "Warms the spine through its full range so early reps of the swing do not ask a cold back for rotation it is not ready to give.",
+      "demoURL": "https://www.youtube.com/results?search_query=cat+cow+stretch+warm+up+form",
+      "isBenchmark": false
+    },
+    {
+      "id": "band-shoulder-pass-through",
+      "name": "Band Shoulder Pass-Through",
+      "category": "mobility",
+      "equipment": "band",
+      "setup": "Stand holding a band with a wide overhand grip in front of your thighs.",
+      "cues": [
+        "Raise the band overhead slowly",
+        "Keep elbows nearly straight",
+        "Lower it behind your body",
+        "Stop before shoulders round forward"
+      ],
+      "swingRationale": "Builds the overhead shoulder mobility that keeps the trail arm connected at the top instead of collapsing the backswing.",
+      "demoURL": "https://www.youtube.com/results?search_query=band+shoulder+pass+through+mobility+exercise",
+      "isBenchmark": false
+    },
+    {
+      "id": "wall-slide",
+      "name": "Wall Slide",
+      "category": "mobility",
+      "equipment": "none",
+      "setup": "Stand with your back, head and arms against a wall, elbows and wrists touching it at ninety degrees.",
+      "cues": [
+        "Slide arms up the wall",
+        "Keep low back flat",
+        "Do not let ribs flare",
+        "Slide down with control"
+      ],
+      "swingRationale": "Improves scapular control that keeps the lead arm on plane instead of disconnecting from the chest in transition.",
+      "demoURL": "https://www.youtube.com/results?search_query=wall+slide+shoulder+mobility+exercise",
+      "isBenchmark": false
+    },
+    {
+      "id": "deep-squat-hold",
+      "name": "Deep Squat Hold",
+      "category": "mobility",
+      "equipment": "none",
+      "setup": "Stand with feet slightly wider than shoulders, lower into the deepest squat you can hold with heels flat.",
+      "cues": [
+        "Keep heels planted",
+        "Chest stays lifted",
+        "Elbows press knees out",
+        "Hold and breathe"
+      ],
+      "swingRationale": "Builds the hip and ankle mobility behind a stable, athletic setup posture that holds up through the whole swing.",
+      "demoURL": "https://www.youtube.com/results?search_query=deep+squat+hold+mobility+exercise",
+      "isBenchmark": false
+    },
+    {
+      "id": "lying-leg-lowering",
+      "name": "Lying Leg Lowering",
+      "category": "mobility",
+      "equipment": "none",
+      "setup": "Lie on your back with both legs straight up toward the ceiling, low back flat on the floor.",
+      "cues": [
+        "Lower one leg slowly",
+        "Keep low back pressed down",
+        "Stop before it arches",
+        "Raise and switch legs"
+      ],
+      "swingRationale": "Trains hamstring length and pelvic control that keep your spine angle steady instead of standing up out of the shot.",
+      "demoURL": "https://www.youtube.com/results?search_query=lying+leg+lowering+hamstring+mobility",
+      "isBenchmark": false
+    },
+    {
+      "id": "standing-hamstring-sweep",
+      "name": "Standing Hamstring Sweep",
+      "category": "mobility",
+      "equipment": "none",
+      "setup": "Stand tall, extend one leg out in front with the heel on the ground, hands resting on the other thigh.",
+      "cues": [
+        "Hinge at the hips, flat back",
+        "Sweep hands toward the toes",
+        "Feel it in the hamstring",
+        "Stand tall between reps"
+      ],
+      "swingRationale": "Tight hamstrings limit the forward hip hinge at address, pushing golfers into a hunched, arms-only posture.",
+      "demoURL": "https://www.youtube.com/results?search_query=standing+hamstring+sweep+dynamic+stretch",
+      "isBenchmark": false
+    },
+    {
+      "id": "thread-the-needle",
+      "name": "Thread the Needle",
+      "category": "mobility",
+      "equipment": "none",
+      "setup": "Start on hands and knees, then slide one arm underneath your body, palm up, resting your shoulder and ear on the floor.",
+      "cues": [
+        "Reach the arm through fully",
+        "Keep hips square and still",
+        "Feel the stretch between shoulder blades",
+        "Unwind slowly to switch"
+      ],
+      "swingRationale": "Opens the upper back rotation needed to keep the club on plane instead of pulling it across the line.",
+      "demoURL": "https://www.youtube.com/results?search_query=thread+the+needle+stretch+t+spine",
+      "isBenchmark": false
+    },
+    {
+      "id": "band-rotational-punch",
+      "name": "Band Rotational Punch",
+      "category": "power",
+      "equipment": "band",
+      "setup": "Anchor a band at chest height behind you, stand side-on in your golf posture and hold the handle at your sternum.",
+      "cues": [
+        "Push off the trail foot",
+        "Hips fire before the hands",
+        "Punch fast, return slow",
+        "Stay in your posture"
+      ],
+      "swingRationale": "Trains the ground-up sequence that produces clubhead speed instead of an arms-only lash at the ball.",
+      "demoURL": "https://www.youtube.com/results?search_query=band+rotational+punch+golf+power",
+      "isBenchmark": true
+    },
+    {
+      "id": "band-chop-high-to-low",
+      "name": "Band Chop",
+      "category": "power",
+      "equipment": "band",
+      "setup": "Anchor a band high above one shoulder, stand side-on and hold the handle with both hands extended overhead.",
+      "cues": [
+        "Pull down and across the body",
+        "Rotate through the trunk",
+        "Finish low near the opposite hip",
+        "Control the return up"
+      ],
+      "swingRationale": "Builds the downward chest rotation that delivers the club on plane instead of casting it from the top.",
+      "demoURL": "https://www.youtube.com/results?search_query=band+wood+chop+high+to+low+exercise",
+      "isBenchmark": false
+    },
+    {
+      "id": "band-lift-low-to-high",
+      "name": "Band Lift",
+      "category": "power",
+      "equipment": "band",
+      "setup": "Anchor a band low near the floor, stand side-on and hold the handle with both hands at the opposite hip.",
+      "cues": [
+        "Pull up and across the body",
+        "Rotate from the trunk, not arms",
+        "Finish high past the shoulder",
+        "Return with control"
+      ],
+      "swingRationale": "Mirrors the upward path of the follow-through, training rotational speed through the ball instead of just arm swing.",
+      "demoURL": "https://www.youtube.com/results?search_query=band+lift+low+to+high+rotational+exercise",
+      "isBenchmark": false
+    },
+    {
+      "id": "band-hip-hinge-snap",
+      "name": "Band Hip Snap",
+      "category": "power",
+      "equipment": "band",
+      "setup": "Anchor a band low behind you, loop it around your hips, and stand in an athletic hinge facing away from the anchor.",
+      "cues": [
+        "Snap hips forward explosively",
+        "Squeeze glutes at the top",
+        "Keep knees soft, not locked",
+        "Reset slowly each rep"
+      ],
+      "swingRationale": "Trains the explosive hip extension that generates ground-up speed instead of relying on arms to hit the ball hard.",
+      "demoURL": "https://www.youtube.com/results?search_query=band+hip+hinge+snap+power+exercise",
+      "isBenchmark": false
+    },
+    {
+      "id": "club-speed-swing",
+      "name": "Club Speed Swing",
+      "category": "power",
+      "equipment": "club",
+      "setup": "Stand in your golf posture holding a lightweight club, feet set as if playing a normal shot.",
+      "cues": [
+        "Swing to full speed through impact",
+        "Stay balanced on the finish",
+        "Let the club release freely",
+        "Reset between reps"
+      ],
+      "swingRationale": "Overspeed reps teach the body to sequence hips, torso, then arms, the pattern that adds distance without losing control.",
+      "demoURL": "https://www.youtube.com/results?search_query=club+speed+swing+training+golf",
+      "isBenchmark": false
+    },
+    {
+      "id": "club-reverse-speed-swing",
+      "name": "Reverse Club Speed Swing",
+      "category": "power",
+      "equipment": "club",
+      "setup": "Stand in your golf posture holding a lightweight club, set up for a normal swing but mirrored to the opposite side.",
+      "cues": [
+        "Swing the opposite direction fast",
+        "Keep balance through the finish",
+        "Match effort on both sides",
+        "Rest fully between reps"
+      ],
+      "swingRationale": "Trains the non-dominant rotational pattern, correcting the strength imbalance that causes an over-the-top move for many golfers.",
+      "demoURL": "https://www.youtube.com/results?search_query=reverse+direction+speed+swing+golf+training",
+      "isBenchmark": false
+    },
+    {
+      "id": "jump-squat",
+      "name": "Jump Squat",
+      "category": "power",
+      "equipment": "none",
+      "setup": "Stand with feet shoulder-width apart, arms relaxed at your sides.",
+      "cues": [
+        "Load into a quarter squat",
+        "Jump straight up explosively",
+        "Land soft with bent knees",
+        "Reset before the next rep"
+      ],
+      "swingRationale": "Builds the vertical ground force that underlies rotational clubhead speed, the same power source used from address to impact.",
+      "demoURL": "https://www.youtube.com/results?search_query=jump+squat+exercise+technique",
+      "isBenchmark": true
+    },
+    {
+      "id": "split-jump",
+      "name": "Split Jump",
+      "category": "power",
+      "equipment": "none",
+      "setup": "Start in a staggered lunge stance, front knee bent, back heel lifted.",
+      "cues": [
+        "Jump and switch legs mid-air",
+        "Land soft in the opposite stance",
+        "Keep chest upright",
+        "Absorb each landing quietly"
+      ],
+      "swingRationale": "Develops single-leg power and landing control that mirror the weight transfer from trail to lead side through impact.",
+      "demoURL": "https://www.youtube.com/results?search_query=split+jump+lunge+exercise+form",
+      "isBenchmark": false
+    },
+    {
+      "id": "broad-jump",
+      "name": "Broad Jump",
+      "category": "power",
+      "equipment": "none",
+      "setup": "Stand with feet hip-width apart, knees slightly bent, arms back ready to swing forward.",
+      "cues": [
+        "Swing arms forward as you jump",
+        "Drive hips forward explosively",
+        "Land soft, knees bent",
+        "Stick the landing before resetting"
+      ],
+      "swingRationale": "Trains horizontal force production, the same forward drive that powers the push off the ground into impact.",
+      "demoURL": "https://www.youtube.com/results?search_query=broad+jump+exercise+technique",
+      "isBenchmark": false
+    },
+    {
+      "id": "lateral-bound",
+      "name": "Lateral Bound",
+      "category": "power",
+      "equipment": "none",
+      "setup": "Stand on one leg with a slight knee bend, the other leg lifted out to the side.",
+      "cues": [
+        "Push off sideways explosively",
+        "Land soft on the opposite leg",
+        "Stick the landing, stay balanced",
+        "Pause before bounding back"
+      ],
+      "swingRationale": "Builds the lateral-to-rotational force transfer that stops the hips from sliding instead of turning through the ball.",
+      "demoURL": "https://www.youtube.com/results?search_query=lateral+bound+single+leg+exercise",
+      "isBenchmark": false
+    },
+    {
+      "id": "skater-hop",
+      "name": "Skater Hop",
+      "category": "power",
+      "equipment": "none",
+      "setup": "Stand on one leg with a soft knee bend, torso slightly forward, other leg trailing behind.",
+      "cues": [
+        "Hop sideways to the other foot",
+        "Land soft and hold briefly",
+        "Swing arms for momentum",
+        "Keep hops light and quick"
+      ],
+      "swingRationale": "Trains quick lateral power and single-leg stability that support a stable trail-side push into the downswing.",
+      "demoURL": "https://www.youtube.com/results?search_query=skater+hop+exercise+lateral+power",
+      "isBenchmark": false
+    },
+    {
+      "id": "push-up",
+      "name": "Push-Up",
+      "category": "strength",
+      "equipment": "none",
+      "setup": "Get into a plank position with hands slightly wider than shoulders, body in one straight line.",
+      "cues": [
+        "Ribs down, do not sag",
+        "Elbows at forty-five degrees",
+        "Lower chest to the floor",
+        "Push back up fully"
+      ],
+      "swingRationale": "Pressing strength stabilizes the lead arm and chest through impact instead of letting the club face flip closed.",
+      "demoURL": "https://www.youtube.com/results?search_query=push+up+exercise+proper+form",
+      "isBenchmark": true
+    },
+    {
+      "id": "tempo-push-up",
+      "name": "Tempo Push-Up",
+      "category": "strength",
+      "equipment": "none",
+      "setup": "Get into a plank position with hands slightly wider than shoulders, body in one straight line.",
+      "cues": [
+        "Lower for a slow four count",
+        "Pause just above the floor",
+        "Press up with control",
+        "Keep the line unbroken"
+      ],
+      "swingRationale": "Slow eccentric control builds the tissue resilience that keeps posture from breaking down late in a round.",
+      "demoURL": "https://www.youtube.com/results?search_query=tempo+push+up+slow+eccentric+exercise",
+      "isBenchmark": false
+    },
+    {
+      "id": "single-arm-biased-push-up",
+      "name": "Single-Arm-Biased Push-Up",
+      "category": "strength",
+      "equipment": "none",
+      "setup": "Get into a wide plank, one hand under the shoulder and the other hand walked out toward that side.",
+      "cues": [
+        "Shift most of the load to one arm",
+        "Keep hips square to floor",
+        "Lower under control",
+        "Alternate sides each set"
+      ],
+      "swingRationale": "Builds the asymmetric pressing strength that stabilizes the lead side against the club's momentum through the ball.",
+      "demoURL": "https://www.youtube.com/results?search_query=single+arm+bias+push+up+exercise",
+      "isBenchmark": false
+    },
+    {
+      "id": "band-row",
+      "name": "Band Row",
+      "category": "strength",
+      "equipment": "band",
+      "setup": "Anchor a band at chest height in front of you, step back to create tension, and hold a handle in each hand.",
+      "cues": [
+        "Pull elbows straight back",
+        "Squeeze shoulder blades together",
+        "Keep chest up, do not lean",
+        "Return with control"
+      ],
+      "swingRationale": "Upper-back pulling strength counters the pressing dominance of the swing, protecting posture from rounding forward over time.",
+      "demoURL": "https://www.youtube.com/results?search_query=band+row+exercise+form+technique",
+      "isBenchmark": true
+    },
+    {
+      "id": "band-pull-apart",
+      "name": "Band Pull-Apart",
+      "category": "strength",
+      "equipment": "band",
+      "setup": "Stand tall holding a light band with both hands at shoulder height, arms extended in front.",
+      "cues": [
+        "Pull the band apart to your chest",
+        "Keep arms straight throughout",
+        "Squeeze shoulder blades together",
+        "Return slowly, no snapping"
+      ],
+      "swingRationale": "Strengthens the rear shoulder muscles that hold the club face square at the top instead of letting it collapse.",
+      "demoURL": "https://www.youtube.com/results?search_query=band+pull+apart+exercise+form",
+      "isBenchmark": false
+    },
+    {
+      "id": "band-face-pull",
+      "name": "Band Face Pull",
+      "category": "strength",
+      "equipment": "band",
+      "setup": "Anchor a band at face height, step back for tension, and hold a handle in each hand at arm's length.",
+      "cues": [
+        "Pull toward your face",
+        "Lead with the elbows high",
+        "Rotate palms forward at the finish",
+        "Control the return"
+      ],
+      "swingRationale": "Builds rotator cuff and rear-shoulder strength that keeps the trail shoulder from rounding forward at address.",
+      "demoURL": "https://www.youtube.com/results?search_query=band+face+pull+exercise+form",
+      "isBenchmark": false
+    },
+    {
+      "id": "kneeling-band-pulldown",
+      "name": "Kneeling Band Pulldown",
+      "category": "strength",
+      "equipment": "band",
+      "setup": "Kneel facing away from a high anchor point, hold the band overhead with both hands.",
+      "cues": [
+        "Pull elbows down to your sides",
+        "Keep ribs from flaring up",
+        "Squeeze at the bottom",
+        "Extend back up slowly"
+      ],
+      "swingRationale": "Trains lat engagement that connects the arms to the torso, preventing a disconnected chicken-wing at the top.",
+      "demoURL": "https://www.youtube.com/results?search_query=kneeling+band+pulldown+lat+exercise",
+      "isBenchmark": false
+    },
+    {
+      "id": "rfe-split-squat",
+      "name": "Rear-Foot-Elevated Split Squat",
+      "category": "strength",
+      "equipment": "none",
+      "setup": "Stand a stride length in front of a bench, rest the top of your back foot on it, front foot flat ahead.",
+      "cues": [
+        "Lower straight down, not forward",
+        "Front knee tracks over toes",
+        "Keep torso upright",
+        "Drive through the front heel"
+      ],
+      "swingRationale": "Builds single-leg strength in the lead leg, the post it braces against during the downswing to resist collapsing.",
+      "demoURL": "https://www.youtube.com/results?search_query=rear+foot+elevated+split+squat+form",
+      "isBenchmark": true
+    },
+    {
+      "id": "single-leg-rdl",
+      "name": "Single-Leg RDL",
+      "category": "strength",
+      "equipment": "none",
+      "setup": "Stand on one leg with a soft knee bend, holding light weight or nothing in the opposite hand.",
+      "cues": [
+        "Hinge forward, extend the back leg",
+        "Keep hips square to the floor",
+        "Reach the free hand toward the floor",
+        "Return to standing under control"
+      ],
+      "swingRationale": "Trains single-leg hip hinge strength and balance, the exact demand placed on the trail leg during the backswing.",
+      "demoURL": "https://www.youtube.com/results?search_query=single+leg+romanian+deadlift+form",
+      "isBenchmark": true
+    },
+    {
+      "id": "reverse-lunge",
+      "name": "Reverse Lunge",
+      "category": "strength",
+      "equipment": "none",
+      "setup": "Stand tall with feet hip-width apart, hands on your hips or holding light weight.",
+      "cues": [
+        "Step one foot straight back",
+        "Lower the back knee toward the floor",
+        "Keep front shin vertical",
+        "Push back to standing"
+      ],
+      "swingRationale": "Builds single-leg strength and control through the range the lead leg moves through as it braces at impact.",
+      "demoURL": "https://www.youtube.com/results?search_query=reverse+lunge+exercise+technique",
+      "isBenchmark": false
+    },
+    {
+      "id": "glute-bridge",
+      "name": "Glute Bridge",
+      "category": "strength",
+      "equipment": "none",
+      "setup": "Lie on your back with knees bent, feet flat on the floor hip-width apart.",
+      "cues": [
+        "Drive hips up through heels",
+        "Squeeze glutes at the top",
+        "Avoid arching the low back",
+        "Lower with control"
+      ],
+      "swingRationale": "Builds glute strength that drives hip extension through impact instead of leaving the low back to do that work.",
+      "demoURL": "https://www.youtube.com/results?search_query=glute+bridge+exercise+form",
+      "isBenchmark": false
+    },
+    {
+      "id": "single-leg-glute-bridge",
+      "name": "Single-Leg Glute Bridge",
+      "category": "strength",
+      "equipment": "none",
+      "setup": "Lie on your back with one knee bent and foot flat, the other leg extended straight up.",
+      "cues": [
+        "Drive through the planted heel",
+        "Keep hips level, no rotating",
+        "Squeeze the glute at the top",
+        "Lower under control"
+      ],
+      "swingRationale": "Isolates one-sided glute strength, correcting the imbalance that lets the trail hip collapse instead of driving into impact.",
+      "demoURL": "https://www.youtube.com/results?search_query=single+leg+glute+bridge+exercise",
+      "isBenchmark": false
+    },
+    {
+      "id": "wall-sit",
+      "name": "Wall Sit",
+      "category": "strength",
+      "equipment": "none",
+      "setup": "Lean your back against a wall and slide down until your knees are bent near ninety degrees.",
+      "cues": [
+        "Keep knees over ankles",
+        "Press low back into the wall",
+        "Hold steady, breathe normally",
+        "Slide up slowly to finish"
+      ],
+      "swingRationale": "Builds the isometric leg endurance that keeps your posture from rising up late in a round of walking golf.",
+      "demoURL": "https://www.youtube.com/results?search_query=wall+sit+exercise+isometric+hold",
+      "isBenchmark": false
+    },
+    {
+      "id": "calf-raise",
+      "name": "Calf Raise",
+      "category": "strength",
+      "equipment": "none",
+      "setup": "Stand tall with feet hip-width apart, holding a wall or rail lightly for balance.",
+      "cues": [
+        "Rise onto the balls of your feet",
+        "Pause at the top",
+        "Lower slowly past level",
+        "Keep knees straight throughout"
+      ],
+      "swingRationale": "Ankle and calf strength keeps the feet stable as ground force transfers up through the legs into the swing.",
+      "demoURL": "https://www.youtube.com/results?search_query=calf+raise+exercise+form+technique",
+      "isBenchmark": false
+    },
+    {
+      "id": "band-anti-rotation-press",
+      "name": "Band Anti-Rotation Press",
+      "category": "core",
+      "equipment": "band",
+      "setup": "Anchor a band at chest height to the side, stand perpendicular to it and hold the handle at your sternum with both hands.",
+      "cues": [
+        "Press straight out from the chest",
+        "Resist the band's pull to rotate",
+        "Keep hips and shoulders square",
+        "Return with control"
+      ],
+      "swingRationale": "Builds the core stability to resist unwanted rotation, keeping the swing sequence from unwinding too early from the top.",
+      "demoURL": "https://www.youtube.com/results?search_query=band+anti+rotation+press+core+exercise",
+      "isBenchmark": false
+    },
+    {
+      "id": "side-plank",
+      "name": "Side Plank",
+      "category": "core",
+      "equipment": "none",
+      "setup": "Lie on your side propped up on one forearm, elbow under the shoulder, legs stacked and straight.",
+      "cues": [
+        "Lift hips off the floor",
+        "Keep body in one straight line",
+        "Do not let hips sag",
+        "Hold steady, breathe"
+      ],
+      "swingRationale": "Trains lateral core strength that resists the side bend forces of the swing, protecting the low back from strain.",
+      "demoURL": "https://www.youtube.com/results?search_query=side+plank+exercise+proper+form",
+      "isBenchmark": true
+    },
+    {
+      "id": "copenhagen-plank",
+      "name": "Copenhagen Plank",
+      "category": "core",
+      "equipment": "none",
+      "setup": "Lie on your side, top foot resting on a bench, bottom leg tucked behind, propped up on your bottom forearm.",
+      "cues": [
+        "Lift the bottom leg to meet the top",
+        "Keep hips lifted and square",
+        "Hold steady without sagging",
+        "Lower with control"
+      ],
+      "swingRationale": "Builds inner-thigh and hip strength that stabilizes the trail leg against the lateral forces of the downswing.",
+      "demoURL": "https://www.youtube.com/results?search_query=copenhagen+plank+adductor+exercise",
+      "isBenchmark": false
+    },
+    {
+      "id": "dead-bug",
+      "name": "Dead Bug",
+      "category": "core",
+      "equipment": "none",
+      "setup": "Lie on your back with arms reaching toward the ceiling and knees bent at ninety degrees above your hips.",
+      "cues": [
+        "Press low back into the floor",
+        "Extend opposite arm and leg slowly",
+        "Keep ribs from flaring",
+        "Return and switch sides"
+      ],
+      "swingRationale": "Trains the core to hold a stable spine while limbs move, mirroring how the trunk resists the arms during the swing.",
+      "demoURL": "https://www.youtube.com/results?search_query=dead+bug+exercise+core+stability",
+      "isBenchmark": false
+    },
+    {
+      "id": "bird-dog",
+      "name": "Bird Dog",
+      "category": "core",
+      "equipment": "none",
+      "setup": "Get on hands and knees with wrists under shoulders and knees under hips.",
+      "cues": [
+        "Extend opposite arm and leg",
+        "Keep hips level, no tilting",
+        "Hold briefly at full extension",
+        "Return with control, switch sides"
+      ],
+      "swingRationale": "Builds the anti-rotation core strength that keeps the spine stable while the arms and legs move independently through the swing.",
+      "demoURL": "https://www.youtube.com/results?search_query=bird+dog+exercise+core+stability",
+      "isBenchmark": false
+    },
+    {
+      "id": "hollow-hold",
+      "name": "Hollow Hold",
+      "category": "core",
+      "equipment": "none",
+      "setup": "Lie on your back, arms extended overhead, legs straight, low back pressed into the floor.",
+      "cues": [
+        "Lift shoulders and legs slightly",
+        "Keep low back glued down",
+        "Reach long through fingers and toes",
+        "Breathe without losing the position"
+      ],
+      "swingRationale": "Builds the whole-body core tension that keeps the spine angle set from address through a fast release.",
+      "demoURL": "https://www.youtube.com/results?search_query=hollow+body+hold+exercise+core",
+      "isBenchmark": false
+    },
+    {
+      "id": "front-plank-reach",
+      "name": "Front Plank Reach",
+      "category": "core",
+      "equipment": "none",
+      "setup": "Get into a forearm plank with elbows under shoulders, body in one straight line.",
+      "cues": [
+        "Reach one arm straight forward",
+        "Keep hips square and still",
+        "Hold briefly, then switch",
+        "Do not let hips rotate"
+      ],
+      "swingRationale": "Trains anti-rotation core control, resisting the twist that leaks power and opens the club face early.",
+      "demoURL": "https://www.youtube.com/results?search_query=plank+reach+anti+rotation+exercise",
+      "isBenchmark": false
+    },
+    {
+      "id": "single-leg-balance-club-reach",
+      "name": "Single-Leg Balance with Club Reach",
+      "category": "balance",
+      "equipment": "club",
+      "setup": "Stand on one leg holding a club vertically in the opposite hand, standing tall with a slight knee bend.",
+      "cues": [
+        "Reach the club forward slowly",
+        "Keep standing hip level",
+        "Return to tall without wobbling",
+        "Switch legs after each set"
+      ],
+      "swingRationale": "Builds the single-leg stability that lets the lead leg brace firmly through impact instead of buckling.",
+      "demoURL": "https://www.youtube.com/results?search_query=single+leg+balance+reach+golf+drill",
+      "isBenchmark": false
+    },
+    {
+      "id": "standing-hip-airplane",
+      "name": "Standing Hip Airplane",
+      "category": "balance",
+      "equipment": "none",
+      "setup": "Stand on one leg with a slight knee bend, torso hinged forward, arms out to the sides like a T.",
+      "cues": [
+        "Rotate hips open, then closed",
+        "Keep standing leg soft",
+        "Hold torso steady over the leg",
+        "Move slowly under control"
+      ],
+      "swingRationale": "Trains hip rotation control on a single stable leg, mirroring the trail-hip stability needed at the top of the backswing.",
+      "demoURL": "https://www.youtube.com/results?search_query=hip+airplane+exercise+balance+mobility",
+      "isBenchmark": false
+    }
+  ],
+  "programs": [
+    {
+      "id": "mobility-foundations",
+      "title": "Mobility Foundations",
+      "subtitle": "Turn further without forcing it",
+      "weeks": 4,
+      "sessionsPerWeek": 3,
+      "whoThisIsFor": "Start here if you cannot make a full backswing without lifting your lead heel or sliding off the ball. Four weeks of hips, mid-back and ankles, three short sessions a week, no equipment beyond a band and a club.",
+      "isRepeatable": false,
+      "sessions": [
+        {
+          "id": "mf-w1d1",
+          "name": "Hips and T-Spine A",
+          "estimatedMinutes": 22,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "cat-cow",
+                  "sets": 1,
+                  "target": {
+                    "kind": "reps",
+                    "value": 8
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "standing-hamstring-sweep",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "ninety-ninety-hip-switch",
+                  "sets": 2,
+                  "target": {
+                    "kind": "reps",
+                    "value": 10
+                  },
+                  "restSeconds": 30,
+                  "note": "Pause two seconds at the end of each switch."
+                },
+                {
+                  "exerciseID": "open-book-tspine",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "half-kneeling-ankle-rock",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "club-shoulder-turn",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "dead-bug",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 45,
+                  "note": null
+                },
+                {
+                  "exerciseID": "standing-hip-airplane",
+                  "sets": 2,
+                  "target": {
+                    "kind": "secondsPerSide",
+                    "value": 20
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mf-w1d2",
+          "name": "Ankles and Balance B",
+          "estimatedMinutes": 21,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "cat-cow",
+                  "sets": 1,
+                  "target": {
+                    "kind": "reps",
+                    "value": 8
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "quadruped-tspine-rotation",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "couch-stretch",
+                  "sets": 2,
+                  "target": {
+                    "kind": "secondsPerSide",
+                    "value": 20
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "seated-figure-four",
+                  "sets": 2,
+                  "target": {
+                    "kind": "secondsPerSide",
+                    "value": 20
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "wall-slide",
+                  "sets": 2,
+                  "target": {
+                    "kind": "reps",
+                    "value": 10
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "thread-the-needle",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "bird-dog",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 45,
+                  "note": null
+                },
+                {
+                  "exerciseID": "single-leg-balance-club-reach",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mf-w1d3",
+          "name": "Full-Body Flow C",
+          "estimatedMinutes": 23,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "standing-hamstring-sweep",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "quadruped-tspine-rotation",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "worlds-greatest-stretch",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 6
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "club-overhead-side-bend",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "deep-squat-hold",
+                  "sets": 2,
+                  "target": {
+                    "kind": "seconds",
+                    "value": 20
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "lying-leg-lowering",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "side-plank",
+                  "sets": 2,
+                  "target": {
+                    "kind": "secondsPerSide",
+                    "value": 20
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-shoulder-pass-through",
+                  "sets": 2,
+                  "target": {
+                    "kind": "reps",
+                    "value": 10
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mf-w2d1",
+          "name": "Hips and T-Spine A",
+          "estimatedMinutes": 23,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "cat-cow",
+                  "sets": 1,
+                  "target": {
+                    "kind": "reps",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "standing-hamstring-sweep",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "ninety-ninety-hip-switch",
+                  "sets": 2,
+                  "target": {
+                    "kind": "reps",
+                    "value": 10
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "open-book-tspine",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "half-kneeling-ankle-rock",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "club-shoulder-turn",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "dead-bug",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 45,
+                  "note": null
+                },
+                {
+                  "exerciseID": "standing-hip-airplane",
+                  "sets": 2,
+                  "target": {
+                    "kind": "secondsPerSide",
+                    "value": 20
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mf-w2d2",
+          "name": "Ankles and Balance B",
+          "estimatedMinutes": 23,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "cat-cow",
+                  "sets": 1,
+                  "target": {
+                    "kind": "reps",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "quadruped-tspine-rotation",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "couch-stretch",
+                  "sets": 2,
+                  "target": {
+                    "kind": "secondsPerSide",
+                    "value": 25
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "seated-figure-four",
+                  "sets": 2,
+                  "target": {
+                    "kind": "secondsPerSide",
+                    "value": 25
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "wall-slide",
+                  "sets": 2,
+                  "target": {
+                    "kind": "reps",
+                    "value": 10
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "thread-the-needle",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "bird-dog",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 45,
+                  "note": null
+                },
+                {
+                  "exerciseID": "single-leg-balance-club-reach",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mf-w2d3",
+          "name": "Full-Body Flow C",
+          "estimatedMinutes": 25,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "standing-hamstring-sweep",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "quadruped-tspine-rotation",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "worlds-greatest-stretch",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 6
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "club-overhead-side-bend",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "deep-squat-hold",
+                  "sets": 2,
+                  "target": {
+                    "kind": "seconds",
+                    "value": 25
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "lying-leg-lowering",
+                  "sets": 2,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "side-plank",
+                  "sets": 2,
+                  "target": {
+                    "kind": "secondsPerSide",
+                    "value": 25
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-shoulder-pass-through",
+                  "sets": 2,
+                  "target": {
+                    "kind": "reps",
+                    "value": 10
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mf-w3d1",
+          "name": "Hips and T-Spine A -- Extended",
+          "estimatedMinutes": 25,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "cat-cow",
+                  "sets": 1,
+                  "target": {
+                    "kind": "reps",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "standing-hamstring-sweep",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "ninety-ninety-hip-switch",
+                  "sets": 3,
+                  "target": {
+                    "kind": "reps",
+                    "value": 10
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "open-book-tspine",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "half-kneeling-ankle-rock",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "club-shoulder-turn",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "dead-bug",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 45,
+                  "note": null
+                },
+                {
+                  "exerciseID": "standing-hip-airplane",
+                  "sets": 3,
+                  "target": {
+                    "kind": "secondsPerSide",
+                    "value": 25
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mf-w3d2",
+          "name": "Ankles and Balance B -- Extended",
+          "estimatedMinutes": 25,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "cat-cow",
+                  "sets": 1,
+                  "target": {
+                    "kind": "reps",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "quadruped-tspine-rotation",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "couch-stretch",
+                  "sets": 3,
+                  "target": {
+                    "kind": "secondsPerSide",
+                    "value": 25
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "seated-figure-four",
+                  "sets": 3,
+                  "target": {
+                    "kind": "secondsPerSide",
+                    "value": 25
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "wall-slide",
+                  "sets": 3,
+                  "target": {
+                    "kind": "reps",
+                    "value": 10
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "thread-the-needle",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "bird-dog",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 45,
+                  "note": null
+                },
+                {
+                  "exerciseID": "single-leg-balance-club-reach",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mf-w3d3",
+          "name": "Full-Body Flow C -- Extended",
+          "estimatedMinutes": 27,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "standing-hamstring-sweep",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "quadruped-tspine-rotation",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "worlds-greatest-stretch",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 6
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "club-overhead-side-bend",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "deep-squat-hold",
+                  "sets": 3,
+                  "target": {
+                    "kind": "seconds",
+                    "value": 25
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "lying-leg-lowering",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "side-plank",
+                  "sets": 3,
+                  "target": {
+                    "kind": "secondsPerSide",
+                    "value": 25
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-shoulder-pass-through",
+                  "sets": 3,
+                  "target": {
+                    "kind": "reps",
+                    "value": 10
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mf-w4d1",
+          "name": "Hips and T-Spine A -- Extended",
+          "estimatedMinutes": 26,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "cat-cow",
+                  "sets": 1,
+                  "target": {
+                    "kind": "reps",
+                    "value": 12
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "standing-hamstring-sweep",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "ninety-ninety-hip-switch",
+                  "sets": 3,
+                  "target": {
+                    "kind": "reps",
+                    "value": 12
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "open-book-tspine",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "half-kneeling-ankle-rock",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 12
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "club-shoulder-turn",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "dead-bug",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 45,
+                  "note": null
+                },
+                {
+                  "exerciseID": "standing-hip-airplane",
+                  "sets": 3,
+                  "target": {
+                    "kind": "secondsPerSide",
+                    "value": 25
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mf-w4d2",
+          "name": "Ankles and Balance B -- Extended",
+          "estimatedMinutes": 26,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "cat-cow",
+                  "sets": 1,
+                  "target": {
+                    "kind": "reps",
+                    "value": 12
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "quadruped-tspine-rotation",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 12
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "couch-stretch",
+                  "sets": 3,
+                  "target": {
+                    "kind": "secondsPerSide",
+                    "value": 30
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "seated-figure-four",
+                  "sets": 3,
+                  "target": {
+                    "kind": "secondsPerSide",
+                    "value": 30
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "wall-slide",
+                  "sets": 3,
+                  "target": {
+                    "kind": "reps",
+                    "value": 12
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "thread-the-needle",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "bird-dog",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 45,
+                  "note": null
+                },
+                {
+                  "exerciseID": "single-leg-balance-club-reach",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mf-w4d3",
+          "name": "Full-Body Flow C -- Extended",
+          "estimatedMinutes": 28,
+          "blocks": [
+            {
+              "kind": "warmup",
+              "prescriptions": [
+                {
+                  "exerciseID": "standing-hamstring-sweep",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                },
+                {
+                  "exerciseID": "quadruped-tspine-rotation",
+                  "sets": 1,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 12
+                  },
+                  "restSeconds": 0,
+                  "note": null
+                }
+              ]
+            },
+            {
+              "kind": "main",
+              "prescriptions": [
+                {
+                  "exerciseID": "worlds-greatest-stretch",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 8
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "club-overhead-side-bend",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "deep-squat-hold",
+                  "sets": 3,
+                  "target": {
+                    "kind": "seconds",
+                    "value": 30
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "lying-leg-lowering",
+                  "sets": 3,
+                  "target": {
+                    "kind": "repsPerSide",
+                    "value": 10
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "side-plank",
+                  "sets": 3,
+                  "target": {
+                    "kind": "secondsPerSide",
+                    "value": 30
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                },
+                {
+                  "exerciseID": "band-shoulder-pass-through",
+                  "sets": 3,
+                  "target": {
+                    "kind": "reps",
+                    "value": 12
+                  },
+                  "restSeconds": 30,
+                  "note": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
