@@ -51,12 +51,18 @@ struct TodayView: View {
                     NextSessionCard(index: index, session: session,
                                     program: program, enrollment: enrollment)
 
-                case .finished(let program, _):
+                case .finished(let program, let enrollment):
                     ContentUnavailableView {
                         Label("Program complete", systemImage: "checkmark.seal")
                     } description: {
-                        Text("You finished \(program.title). Pick what is next.")
+                        Text(program.isRepeatable
+                             ? "You finished \(program.title). Run it again, or pick something else."
+                             : "You finished \(program.title). Pick what is next.")
                     } actions: {
+                        if program.isRepeatable {
+                            Button("Run it again") { enrollment.completeAndRepeat(in: context) }
+                                .buttonStyle(.borderedProminent)
+                        }
                         NavigationLink("Browse programs") { ProgramPickerList() }
                     }
                 }
