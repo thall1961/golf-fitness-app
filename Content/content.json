@@ -3917,7 +3917,7 @@
         {
           "id": "osp-w7d1",
           "name": "Rotational Power -- Week 7",
-          "estimatedMinutes": 51,
+          "estimatedMinutes": 49,
           "blocks": [
             {
               "kind": "warmup",
@@ -4014,7 +4014,7 @@
               "prescriptions": [
                 {
                   "exerciseID": "skater-hop",
-                  "sets": 6,
+                  "sets": 5,
                   "target": {
                     "kind": "reps",
                     "value": 9
@@ -4029,7 +4029,7 @@
         {
           "id": "osp-w7d2",
           "name": "Single-Leg Strength -- Week 7",
-          "estimatedMinutes": 50,
+          "estimatedMinutes": 48,
           "blocks": [
             {
               "kind": "warmup",
@@ -4126,7 +4126,7 @@
               "prescriptions": [
                 {
                   "exerciseID": "split-jump",
-                  "sets": 6,
+                  "sets": 5,
                   "target": {
                     "kind": "reps",
                     "value": 8
@@ -4238,7 +4238,7 @@
         {
           "id": "osp-w8d1",
           "name": "Rotational Power -- Week 8",
-          "estimatedMinutes": 52,
+          "estimatedMinutes": 50,
           "blocks": [
             {
               "kind": "warmup",
@@ -4335,7 +4335,7 @@
               "prescriptions": [
                 {
                   "exerciseID": "skater-hop",
-                  "sets": 6,
+                  "sets": 5,
                   "target": {
                     "kind": "reps",
                     "value": 10
@@ -4350,7 +4350,7 @@
         {
           "id": "osp-w8d2",
           "name": "Single-Leg Strength -- Week 8",
-          "estimatedMinutes": 51,
+          "estimatedMinutes": 49,
           "blocks": [
             {
               "kind": "warmup",
@@ -4447,7 +4447,7 @@
               "prescriptions": [
                 {
                   "exerciseID": "split-jump",
-                  "sets": 6,
+                  "sets": 5,
                   "target": {
                     "kind": "reps",
                     "value": 9
