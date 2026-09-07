@@ -9,8 +9,16 @@ import os
 /// cannot change underneath the person doing it.
 actor ContentStore {
 
+    // The repository backing this URL (thall1961/golf-fitness-app) is public
+    // and this endpoint is live — but it resolves only once `Content/content.json`
+    // exists on `main`. Today that file lives on the `fairway-fit-v1` branch,
+    // so this request 404s to an unauthenticated client and every `refresh()`
+    // fails silently — that failure path is exercised deliberately, and the
+    // app runs on its bundled content, which is a fully supported state.
+    // Remote updates begin working the moment this branch merges to `main`;
+    // no code change is required when that happens.
     static let defaultContentURL = URL(
-        string: "https://raw.githubusercontent.com/thomashall/fairway-fit/main/Content/content.json"
+        string: "https://raw.githubusercontent.com/thall1961/golf-fitness-app/main/Content/content.json"
     )!
 
     private(set) var content: Content
