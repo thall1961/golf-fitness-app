@@ -1991,7 +1991,7 @@
         {
           "id": "osp-w1d1",
           "name": "Rotational Power",
-          "estimatedMinutes": 38,
+          "estimatedMinutes": 39,
           "blocks": [
             {
               "kind": "warmup",
@@ -2093,7 +2093,7 @@
                     "kind": "reps",
                     "value": 7
                   },
-                  "restSeconds": 30,
+                  "restSeconds": 45,
                   "note": "Quick, light feet -- this is speed work, not a grind."
                 }
               ]
@@ -2103,7 +2103,7 @@
         {
           "id": "osp-w1d2",
           "name": "Single-Leg Strength",
-          "estimatedMinutes": 37,
+          "estimatedMinutes": 38,
           "blocks": [
             {
               "kind": "warmup",
@@ -2205,7 +2205,7 @@
                     "kind": "reps",
                     "value": 6
                   },
-                  "restSeconds": 30,
+                  "restSeconds": 45,
                   "note": "Land soft -- control beats height here."
                 }
               ]
@@ -2312,7 +2312,7 @@
         {
           "id": "osp-w2d1",
           "name": "Rotational Power -- Week 2",
-          "estimatedMinutes": 39,
+          "estimatedMinutes": 41,
           "blocks": [
             {
               "kind": "warmup",
@@ -2414,7 +2414,7 @@
                     "kind": "reps",
                     "value": 7
                   },
-                  "restSeconds": 30,
+                  "restSeconds": 55,
                   "note": "Quick, light feet -- this is speed work, not a grind."
                 }
               ]
@@ -2424,7 +2424,7 @@
         {
           "id": "osp-w2d2",
           "name": "Single-Leg Strength -- Week 2",
-          "estimatedMinutes": 38,
+          "estimatedMinutes": 40,
           "blocks": [
             {
               "kind": "warmup",
@@ -2526,7 +2526,7 @@
                     "kind": "reps",
                     "value": 6
                   },
-                  "restSeconds": 30,
+                  "restSeconds": 55,
                   "note": "Land soft -- control beats height here."
                 }
               ]
@@ -2633,7 +2633,7 @@
         {
           "id": "osp-w3d1",
           "name": "Rotational Power -- Week 3",
-          "estimatedMinutes": 40,
+          "estimatedMinutes": 42,
           "blocks": [
             {
               "kind": "warmup",
@@ -2735,7 +2735,7 @@
                     "kind": "reps",
                     "value": 8
                   },
-                  "restSeconds": 30,
+                  "restSeconds": 55,
                   "note": "Quick, light feet -- this is speed work, not a grind."
                 }
               ]
@@ -2745,7 +2745,7 @@
         {
           "id": "osp-w3d2",
           "name": "Single-Leg Strength -- Week 3",
-          "estimatedMinutes": 39,
+          "estimatedMinutes": 41,
           "blocks": [
             {
               "kind": "warmup",
@@ -2847,7 +2847,7 @@
                     "kind": "reps",
                     "value": 7
                   },
-                  "restSeconds": 30,
+                  "restSeconds": 55,
                   "note": "Land soft -- control beats height here."
                 }
               ]
@@ -2954,7 +2954,7 @@
         {
           "id": "osp-w4d1",
           "name": "Rotational Power -- Week 4",
-          "estimatedMinutes": 41,
+          "estimatedMinutes": 43,
           "blocks": [
             {
               "kind": "warmup",
@@ -3056,7 +3056,7 @@
                     "kind": "reps",
                     "value": 8
                   },
-                  "restSeconds": 25,
+                  "restSeconds": 60,
                   "note": "Quick, light feet -- this is speed work, not a grind."
                 }
               ]
@@ -3066,7 +3066,7 @@
         {
           "id": "osp-w4d2",
           "name": "Single-Leg Strength -- Week 4",
-          "estimatedMinutes": 40,
+          "estimatedMinutes": 42,
           "blocks": [
             {
               "kind": "warmup",
@@ -3168,7 +3168,7 @@
                     "kind": "reps",
                     "value": 7
                   },
-                  "restSeconds": 25,
+                  "restSeconds": 60,
                   "note": "Land soft -- control beats height here."
                 }
               ]
@@ -3275,7 +3275,7 @@
         {
           "id": "osp-w5d1",
           "name": "Rotational Power -- Week 5",
-          "estimatedMinutes": 42,
+          "estimatedMinutes": 46,
           "blocks": [
             {
               "kind": "warmup",
@@ -3377,7 +3377,7 @@
                     "kind": "reps",
                     "value": 8
                   },
-                  "restSeconds": 20,
+                  "restSeconds": 70,
                   "note": "Quick, light feet -- this is speed work, not a grind."
                 }
               ]
@@ -3387,7 +3387,7 @@
         {
           "id": "osp-w5d2",
           "name": "Single-Leg Strength -- Week 5",
-          "estimatedMinutes": 41,
+          "estimatedMinutes": 45,
           "blocks": [
             {
               "kind": "warmup",
@@ -3489,7 +3489,7 @@
                     "kind": "reps",
                     "value": 7
                   },
-                  "restSeconds": 20,
+                  "restSeconds": 70,
                   "note": "Land soft -- control beats height here."
                 }
               ]
@@ -3596,7 +3596,7 @@
         {
           "id": "osp-w6d1",
           "name": "Rotational Power -- Week 6",
-          "estimatedMinutes": 43,
+          "estimatedMinutes": 48,
           "blocks": [
             {
               "kind": "warmup",
@@ -3698,7 +3698,7 @@
                     "kind": "reps",
                     "value": 9
                   },
-                  "restSeconds": 20,
+                  "restSeconds": 75,
                   "note": "Quick, light feet -- this is speed work, not a grind."
                 }
               ]
@@ -3708,7 +3708,7 @@
         {
           "id": "osp-w6d2",
           "name": "Single-Leg Strength -- Week 6",
-          "estimatedMinutes": 42,
+          "estimatedMinutes": 47,
           "blocks": [
             {
               "kind": "warmup",
@@ -3810,7 +3810,7 @@
                     "kind": "reps",
                     "value": 8
                   },
-                  "restSeconds": 20,
+                  "restSeconds": 75,
                   "note": "Land soft -- control beats height here."
                 }
               ]
@@ -3917,7 +3917,7 @@
         {
           "id": "osp-w7d1",
           "name": "Rotational Power -- Week 7",
-          "estimatedMinutes": 44,
+          "estimatedMinutes": 51,
           "blocks": [
             {
               "kind": "warmup",
@@ -4019,7 +4019,7 @@
                     "kind": "reps",
                     "value": 9
                   },
-                  "restSeconds": 20,
+                  "restSeconds": 85,
                   "note": "Quick, light feet -- this is speed work, not a grind."
                 }
               ]
@@ -4029,7 +4029,7 @@
         {
           "id": "osp-w7d2",
           "name": "Single-Leg Strength -- Week 7",
-          "estimatedMinutes": 43,
+          "estimatedMinutes": 50,
           "blocks": [
             {
               "kind": "warmup",
@@ -4131,7 +4131,7 @@
                     "kind": "reps",
                     "value": 8
                   },
-                  "restSeconds": 20,
+                  "restSeconds": 85,
                   "note": "Land soft -- control beats height here."
                 }
               ]
@@ -4238,7 +4238,7 @@
         {
           "id": "osp-w8d1",
           "name": "Rotational Power -- Week 8",
-          "estimatedMinutes": 45,
+          "estimatedMinutes": 52,
           "blocks": [
             {
               "kind": "warmup",
@@ -4340,7 +4340,7 @@
                     "kind": "reps",
                     "value": 10
                   },
-                  "restSeconds": 20,
+                  "restSeconds": 90,
                   "note": "Quick, light feet -- this is speed work, not a grind."
                 }
               ]
@@ -4350,7 +4350,7 @@
         {
           "id": "osp-w8d2",
           "name": "Single-Leg Strength -- Week 8",
-          "estimatedMinutes": 44,
+          "estimatedMinutes": 51,
           "blocks": [
             {
               "kind": "warmup",
@@ -4452,7 +4452,7 @@
                     "kind": "reps",
                     "value": 9
                   },
-                  "restSeconds": 20,
+                  "restSeconds": 90,
                   "note": "Land soft -- control beats height here."
                 }
               ]
