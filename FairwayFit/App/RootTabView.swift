@@ -7,7 +7,7 @@ struct RootTabView: View {
                 Text("Today")
             }
             Tab("Programs", systemImage: "list.bullet.rectangle") {
-                Text("Programs")
+                ProgramListView()
             }
             Tab("Progress", systemImage: "chart.xyaxis.line") {
                 Text("Progress")
