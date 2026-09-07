@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": 2,
+  "version": 3,
   "exercises": [
     {
       "id": "ninety-ninety-hip-switch",
@@ -368,7 +368,7 @@
       ],
       "swingRationale": "Builds the vertical ground force that underlies rotational clubhead speed, the same power source used from address to impact.",
       "demoURL": "https://www.youtube.com/results?search_query=jump+squat+exercise+technique",
-      "isBenchmark": true
+      "isBenchmark": false
     },
     {
       "id": "split-jump",
@@ -2103,7 +2103,7 @@
         {
           "id": "osp-w1d2",
           "name": "Single-Leg Strength",
-          "estimatedMinutes": 38,
+          "estimatedMinutes": 40,
           "blocks": [
             {
               "kind": "warmup",
@@ -2165,12 +2165,12 @@
                 },
                 {
                   "exerciseID": "lateral-bound",
-                  "sets": 2,
+                  "sets": 3,
                   "target": {
                     "kind": "repsPerSide",
-                    "value": 6
+                    "value": 7
                   },
-                  "restSeconds": 30,
+                  "restSeconds": 45,
                   "note": null
                 },
                 {
@@ -2215,7 +2215,7 @@
         {
           "id": "osp-w1d3",
           "name": "Push/Pull and Core",
-          "estimatedMinutes": 35,
+          "estimatedMinutes": 36,
           "blocks": [
             {
               "kind": "warmup",
@@ -2257,12 +2257,12 @@
               "prescriptions": [
                 {
                   "exerciseID": "band-hip-hinge-snap",
-                  "sets": 2,
+                  "sets": 3,
                   "target": {
                     "kind": "reps",
-                    "value": 10
+                    "value": 6
                   },
-                  "restSeconds": 30,
+                  "restSeconds": 45,
                   "note": null
                 },
                 {
@@ -2424,7 +2424,7 @@
         {
           "id": "osp-w2d2",
           "name": "Single-Leg Strength -- Week 2",
-          "estimatedMinutes": 40,
+          "estimatedMinutes": 44,
           "blocks": [
             {
               "kind": "warmup",
@@ -2486,12 +2486,12 @@
                 },
                 {
                   "exerciseID": "lateral-bound",
-                  "sets": 2,
+                  "sets": 4,
                   "target": {
                     "kind": "repsPerSide",
                     "value": 7
                   },
-                  "restSeconds": 30,
+                  "restSeconds": 55,
                   "note": null
                 },
                 {
@@ -2536,7 +2536,7 @@
         {
           "id": "osp-w2d3",
           "name": "Push/Pull and Core -- Week 2",
-          "estimatedMinutes": 36,
+          "estimatedMinutes": 39,
           "blocks": [
             {
               "kind": "warmup",
@@ -2578,12 +2578,12 @@
               "prescriptions": [
                 {
                   "exerciseID": "band-hip-hinge-snap",
-                  "sets": 2,
+                  "sets": 4,
                   "target": {
                     "kind": "reps",
-                    "value": 11
+                    "value": 6
                   },
-                  "restSeconds": 30,
+                  "restSeconds": 55,
                   "note": null
                 },
                 {
@@ -2745,7 +2745,7 @@
         {
           "id": "osp-w3d2",
           "name": "Single-Leg Strength -- Week 3",
-          "estimatedMinutes": 41,
+          "estimatedMinutes": 44,
           "blocks": [
             {
               "kind": "warmup",
@@ -2807,12 +2807,12 @@
                 },
                 {
                   "exerciseID": "lateral-bound",
-                  "sets": 3,
+                  "sets": 4,
                   "target": {
                     "kind": "repsPerSide",
                     "value": 8
                   },
-                  "restSeconds": 30,
+                  "restSeconds": 55,
                   "note": null
                 },
                 {
@@ -2857,7 +2857,7 @@
         {
           "id": "osp-w3d3",
           "name": "Push/Pull and Core -- Week 3",
-          "estimatedMinutes": 36,
+          "estimatedMinutes": 38,
           "blocks": [
             {
               "kind": "warmup",
@@ -2899,12 +2899,12 @@
               "prescriptions": [
                 {
                   "exerciseID": "band-hip-hinge-snap",
-                  "sets": 3,
+                  "sets": 4,
                   "target": {
                     "kind": "reps",
-                    "value": 12
+                    "value": 7
                   },
-                  "restSeconds": 30,
+                  "restSeconds": 55,
                   "note": null
                 },
                 {
@@ -3066,7 +3066,7 @@
         {
           "id": "osp-w4d2",
           "name": "Single-Leg Strength -- Week 4",
-          "estimatedMinutes": 42,
+          "estimatedMinutes": 46,
           "blocks": [
             {
               "kind": "warmup",
@@ -3128,12 +3128,12 @@
                 },
                 {
                   "exerciseID": "lateral-bound",
-                  "sets": 3,
+                  "sets": 4,
                   "target": {
                     "kind": "repsPerSide",
                     "value": 8
                   },
-                  "restSeconds": 25,
+                  "restSeconds": 60,
                   "note": null
                 },
                 {
@@ -3178,7 +3178,7 @@
         {
           "id": "osp-w4d3",
           "name": "Push/Pull and Core -- Week 4",
-          "estimatedMinutes": 37,
+          "estimatedMinutes": 39,
           "blocks": [
             {
               "kind": "warmup",
@@ -3220,12 +3220,12 @@
               "prescriptions": [
                 {
                   "exerciseID": "band-hip-hinge-snap",
-                  "sets": 3,
+                  "sets": 4,
                   "target": {
                     "kind": "reps",
-                    "value": 12
+                    "value": 7
                   },
-                  "restSeconds": 25,
+                  "restSeconds": 60,
                   "note": null
                 },
                 {
@@ -3387,7 +3387,7 @@
         {
           "id": "osp-w5d2",
           "name": "Single-Leg Strength -- Week 5",
-          "estimatedMinutes": 45,
+          "estimatedMinutes": 52,
           "blocks": [
             {
               "kind": "warmup",
@@ -3449,12 +3449,12 @@
                 },
                 {
                   "exerciseID": "lateral-bound",
-                  "sets": 3,
+                  "sets": 5,
                   "target": {
                     "kind": "repsPerSide",
                     "value": 9
                   },
-                  "restSeconds": 20,
+                  "restSeconds": 70,
                   "note": null
                 },
                 {
@@ -3499,7 +3499,7 @@
         {
           "id": "osp-w5d3",
           "name": "Push/Pull and Core -- Week 5",
-          "estimatedMinutes": 37,
+          "estimatedMinutes": 42,
           "blocks": [
             {
               "kind": "warmup",
@@ -3541,12 +3541,12 @@
               "prescriptions": [
                 {
                   "exerciseID": "band-hip-hinge-snap",
-                  "sets": 3,
+                  "sets": 5,
                   "target": {
                     "kind": "reps",
-                    "value": 13
+                    "value": 7
                   },
-                  "restSeconds": 20,
+                  "restSeconds": 70,
                   "note": null
                 },
                 {
@@ -3708,7 +3708,7 @@
         {
           "id": "osp-w6d2",
           "name": "Single-Leg Strength -- Week 6",
-          "estimatedMinutes": 47,
+          "estimatedMinutes": 53,
           "blocks": [
             {
               "kind": "warmup",
@@ -3770,12 +3770,12 @@
                 },
                 {
                   "exerciseID": "lateral-bound",
-                  "sets": 4,
+                  "sets": 5,
                   "target": {
                     "kind": "repsPerSide",
                     "value": 9
                   },
-                  "restSeconds": 20,
+                  "restSeconds": 75,
                   "note": null
                 },
                 {
@@ -3820,7 +3820,7 @@
         {
           "id": "osp-w6d3",
           "name": "Push/Pull and Core -- Week 6",
-          "estimatedMinutes": 38,
+          "estimatedMinutes": 43,
           "blocks": [
             {
               "kind": "warmup",
@@ -3862,12 +3862,12 @@
               "prescriptions": [
                 {
                   "exerciseID": "band-hip-hinge-snap",
-                  "sets": 3,
+                  "sets": 5,
                   "target": {
                     "kind": "reps",
-                    "value": 13
+                    "value": 8
                   },
-                  "restSeconds": 20,
+                  "restSeconds": 75,
                   "note": null
                 },
                 {
@@ -4029,7 +4029,7 @@
         {
           "id": "osp-w7d2",
           "name": "Single-Leg Strength -- Week 7",
-          "estimatedMinutes": 48,
+          "estimatedMinutes": 55,
           "blocks": [
             {
               "kind": "warmup",
@@ -4091,12 +4091,12 @@
                 },
                 {
                   "exerciseID": "lateral-bound",
-                  "sets": 4,
+                  "sets": 5,
                   "target": {
                     "kind": "repsPerSide",
                     "value": 10
                   },
-                  "restSeconds": 20,
+                  "restSeconds": 85,
                   "note": null
                 },
                 {
@@ -4141,7 +4141,7 @@
         {
           "id": "osp-w7d3",
           "name": "Push/Pull and Core -- Week 7",
-          "estimatedMinutes": 38,
+          "estimatedMinutes": 44,
           "blocks": [
             {
               "kind": "warmup",
@@ -4183,12 +4183,12 @@
               "prescriptions": [
                 {
                   "exerciseID": "band-hip-hinge-snap",
-                  "sets": 3,
+                  "sets": 5,
                   "target": {
                     "kind": "reps",
-                    "value": 14
+                    "value": 8
                   },
-                  "restSeconds": 20,
+                  "restSeconds": 85,
                   "note": null
                 },
                 {
@@ -4350,7 +4350,7 @@
         {
           "id": "osp-w8d2",
           "name": "Single-Leg Strength -- Week 8",
-          "estimatedMinutes": 49,
+          "estimatedMinutes": 55,
           "blocks": [
             {
               "kind": "warmup",
@@ -4417,7 +4417,7 @@
                     "kind": "repsPerSide",
                     "value": 10
                   },
-                  "restSeconds": 20,
+                  "restSeconds": 90,
                   "note": null
                 },
                 {
@@ -4462,7 +4462,7 @@
         {
           "id": "osp-w8d3",
           "name": "Push/Pull and Core -- Week 8",
-          "estimatedMinutes": 39,
+          "estimatedMinutes": 46,
           "blocks": [
             {
               "kind": "warmup",
@@ -4504,12 +4504,12 @@
               "prescriptions": [
                 {
                   "exerciseID": "band-hip-hinge-snap",
-                  "sets": 3,
+                  "sets": 5,
                   "target": {
                     "kind": "reps",
-                    "value": 15
+                    "value": 9
                   },
-                  "restSeconds": 20,
+                  "restSeconds": 90,
                   "note": null
                 },
                 {

@@ -5,6 +5,16 @@ struct TodayView: View {
     @Environment(AppState.self) private var appState
     @Environment(\.modelContext) private var context
 
+    // A real @Query dependency, not a manual context.fetch, so SwiftUI has
+    // something to invalidate on: enrolling from another tab (Programs) and
+    // switching back to Today must re-render this view, not just a pop from
+    // this tab's own navigation stack.
+    @Query(filter: #Predicate<Enrollment> { $0.isActive },
+           sort: \Enrollment.startedAt, order: .reverse)
+    private var activeEnrollments: [Enrollment]
+
+    private var activeEnrollment: Enrollment? { activeEnrollments.first }
+
     /// What Today has to say right now. Derived, never stored.
     enum State {
         case noEnrollment
@@ -14,7 +24,7 @@ struct TodayView: View {
     }
 
     private var state: State {
-        guard let enrollment = appState.activeEnrollment(in: context) else { return .noEnrollment }
+        guard let enrollment = activeEnrollment else { return .noEnrollment }
         guard let program = appState.program(for: enrollment) else {
             return .programUnavailable(id: enrollment.programID)
         }

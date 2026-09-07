@@ -82,6 +82,38 @@ import Testing
         #expect(messages(content).contains { $0.contains("empty-block") })
     }
 
+    @Test func rejectsSessionPrescribingSameExerciseTwice() {
+        // Same exercise prescribed once in warmup and once in main — the
+        // exact "already a warmup elsewhere" shape that lets a content push
+        // silently collide two SetLog rows under one (exerciseID, setNumber) key.
+        let session = makeSession(id: "dup-rx", blocks: [
+            Block(kind: .warmup, prescriptions: [makePrescription(exerciseID: "push-up")]),
+            Block(kind: .main, prescriptions: [makePrescription(exerciseID: "push-up")])
+        ])
+        let content = makeContent(
+            exercises: [makeExercise(isBenchmark: true)],
+            programs: [makeProgram(sessions: [session])]
+        )
+        let found = messages(content)
+        #expect(found.contains { $0.contains("prescribes") && $0.contains("dup-rx") && $0.contains("push-up") })
+    }
+
+    @Test func rejectsSessionWithDuplicateBlockKind() {
+        // Two main blocks in the same session. Block order is still
+        // non-decreasing (main, main), so this only trips the new duplicate-
+        // block-kind rule, not the existing block-order rule.
+        let session = makeSession(id: "dup-block", blocks: [
+            Block(kind: .main, prescriptions: [makePrescription(exerciseID: "push-up")]),
+            Block(kind: .main, prescriptions: [makePrescription(exerciseID: "band-row")])
+        ])
+        let content = makeContent(
+            exercises: [makeExercise(id: "push-up", isBenchmark: true), makeExercise(id: "band-row")],
+            programs: [makeProgram(sessions: [session])]
+        )
+        let found = messages(content)
+        #expect(found.contains { $0.contains("duplicate") && $0.contains("block") && $0.contains("dup-block") })
+    }
+
     @Test func rejectsBlocksOutOfOrder() {
         let session = makeSession(id: "wrong-order", blocks: [
             Block(kind: .main, prescriptions: [makePrescription()]),

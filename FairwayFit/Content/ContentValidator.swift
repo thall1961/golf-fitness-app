@@ -65,11 +65,20 @@ enum ContentValidator {
                 let order = session.blocks.map(\.kind.order)
                 if order != order.sorted() { fail("session '\(sid)' has blocks out of block order") }
 
+                var seenBlockKinds: Set<BlockKind> = []
+                for kind in session.blocks.map(\.kind) where !seenBlockKinds.insert(kind).inserted {
+                    fail("session '\(sid)' has a duplicate \(kind.rawValue) block")
+                }
+
+                var seenPrescribedExerciseIDs: Set<String> = []
                 for block in session.blocks {
                     if block.prescriptions.isEmpty {
                         fail("session '\(sid)' has an empty \(block.kind.rawValue) block")
                     }
                     for prescription in block.prescriptions {
+                        if !seenPrescribedExerciseIDs.insert(prescription.exerciseID).inserted {
+                            fail("session '\(sid)' prescribes '\(prescription.exerciseID)' more than once")
+                        }
                         if !seenExerciseIDs.contains(prescription.exerciseID) {
                             fail("session '\(sid)' references unknown exercise '\(prescription.exerciseID)'")
                         }
