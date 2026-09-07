@@ -4,7 +4,7 @@ struct RootTabView: View {
     var body: some View {
         TabView {
             Tab("Today", systemImage: "figure.strengthtraining.functional") {
-                Text("Today")
+                TodayView()
             }
             Tab("Programs", systemImage: "list.bullet.rectangle") {
                 ProgramListView()
