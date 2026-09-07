@@ -24,6 +24,7 @@ enum ContentValidator {
         for exercise in content.exercises {
             let id = exercise.id
             if id.trimmed.isEmpty { fail("exercise has an empty id") }
+            if id.trimmed != id { fail("exercise '\(id)' id has leading or trailing whitespace") }
             if !seenExerciseIDs.insert(id).inserted { fail("duplicate exercise id '\(id)'") }
             if exercise.name.trimmed.isEmpty { fail("exercise '\(id)' has an empty name") }
             if exercise.setup.trimmed.isEmpty { fail("exercise '\(id)' has an empty setup") }
@@ -43,8 +44,10 @@ enum ContentValidator {
         for program in content.programs {
             let pid = program.id
             if pid.trimmed.isEmpty { fail("program has an empty id") }
+            if pid.trimmed != pid { fail("program '\(pid)' id has leading or trailing whitespace") }
             if !seenProgramIDs.insert(pid).inserted { fail("duplicate program id '\(pid)'") }
             if program.title.trimmed.isEmpty { fail("program '\(pid)' has an empty title") }
+            if program.subtitle.trimmed.isEmpty { fail("program '\(pid)' has an empty subtitle") }
             if program.whoThisIsFor.trimmed.isEmpty { fail("program '\(pid)' has an empty whoThisIsFor") }
             if program.weeks <= 0 { fail("program '\(pid)' weeks must be positive") }
             if program.sessionsPerWeek <= 0 { fail("program '\(pid)' sessionsPerWeek must be positive") }
@@ -53,6 +56,7 @@ enum ContentValidator {
             for session in program.sessions {
                 let sid = session.id
                 if sid.trimmed.isEmpty { fail("program '\(pid)' has a session with an empty id") }
+                if sid.trimmed != sid { fail("session '\(sid)' id has leading or trailing whitespace") }
                 if !seenSessionIDs.insert(sid).inserted { fail("duplicate session id '\(sid)'") }
                 if session.name.trimmed.isEmpty { fail("session '\(sid)' has an empty name") }
                 if session.estimatedMinutes <= 0 { fail("session '\(sid)' estimatedMinutes must be positive") }

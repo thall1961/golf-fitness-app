@@ -122,6 +122,46 @@ import Testing
         #expect(messages(content).contains { $0.contains("isBenchmark") })
     }
 
+    @Test func rejectsNegativeRestSeconds() {
+        let session = makeSession(blocks: [Block(kind: .main, prescriptions: [
+            makePrescription(restSeconds: -1)
+        ])])
+        let content = makeContent(
+            exercises: [makeExercise(isBenchmark: true)],
+            programs: [makeProgram(sessions: [session])]
+        )
+        #expect(messages(content).contains { $0.contains("restSeconds") })
+    }
+
+    @Test func rejectsExerciseIDWithWhitespace() {
+        let content = makeContent(exercises: [makeExercise(id: "push-up ", isBenchmark: true)])
+        #expect(messages(content).contains { $0.contains("whitespace") })
+    }
+
+    @Test func rejectsProgramIDWithWhitespace() {
+        let content = makeContent(
+            exercises: [makeExercise(isBenchmark: true)],
+            programs: [makeProgram(id: "program ")]
+        )
+        #expect(messages(content).contains { $0.contains("whitespace") })
+    }
+
+    @Test func rejectsSessionIDWithWhitespace() {
+        let content = makeContent(
+            exercises: [makeExercise(isBenchmark: true)],
+            programs: [makeProgram(sessions: [makeSession(id: "s1 ")])]
+        )
+        #expect(messages(content).contains { $0.contains("whitespace") })
+    }
+
+    @Test func rejectsEmptyProgramSubtitle() {
+        let content = makeContent(
+            exercises: [makeExercise(isBenchmark: true)],
+            programs: [makeProgram(subtitle: "   ")]
+        )
+        #expect(messages(content).contains { $0.contains("subtitle") })
+    }
+
     @Test func decoderRejectsMalformedJSON() {
         #expect(throws: ContentError.malformed) {
             try ContentDecoder.decode(Data("{ not json".utf8))
@@ -149,5 +189,18 @@ import Testing
         let data = try JSONEncoder().encode(content)
         let decoded = try ContentDecoder.decode(data)
         #expect(decoded.version == content.version)
+    }
+
+    @Test func decoderRejectsInvalidDocument() throws {
+        let content = makeContent(exercises: [makeExercise(isBenchmark: false)])
+        let data = try JSONEncoder().encode(content)
+        do {
+            _ = try ContentDecoder.decode(data)
+            Issue.record("expected ContentError.invalid to be thrown")
+        } catch ContentError.invalid(let errors) {
+            #expect(!errors.isEmpty)
+        } catch {
+            Issue.record("expected ContentError.invalid, got \(error)")
+        }
     }
 }
