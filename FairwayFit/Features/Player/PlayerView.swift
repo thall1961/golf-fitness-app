@@ -116,6 +116,7 @@ struct PlayerView: View {
                     Button("Done") {
                         model?.finish(rpe: Int(rpe))
                         showFinishSheet = false
+                        rescheduleReminders()
                         dismiss()
                     }
                 }
@@ -123,12 +124,42 @@ struct PlayerView: View {
                     Button("Skip") {
                         model?.finish(rpe: nil)
                         showFinishSheet = false
+                        rescheduleReminders()
                         dismiss()
                     }
                 }
             }
         }
         .presentationDetents([.medium])
+    }
+
+    /// The reminder body names whatever session is next, so it goes stale the
+    /// moment one is finished — this refreshes it, it does not add urgency.
+    private func rescheduleReminders() {
+        Task {
+            let notifications = NotificationCenterClient()
+            guard let profile = try? context.fetch(FetchDescriptor<Profile>()).first,
+                  profile.remindersEnabled,
+                  let program = appState.content.program(id: enrollment.programID) else { return }
+            let preference = ReminderPreference(weekdays: profile.reminderWeekdays,
+                                                hour: profile.reminderHour,
+                                                minute: profile.reminderMinute,
+                                                enabled: true)
+            if let next = ProgramEngine.nextSession(program: program,
+                                                    completions: enrollment.completionRecords) {
+                await notifications.replaceReminders(
+                    title: "Fairway Fit",
+                    body: ReminderScheduler.body(sessionNumber: next.index + 1,
+                                                 total: program.sessions.count,
+                                                 sessionName: next.session.name,
+                                                 minutes: next.session.estimatedMinutes),
+                    preference: preference)
+            } else {
+                await notifications.replaceReminders(title: "Fairway Fit",
+                                                     body: "Program complete. Pick what is next.",
+                                                     preference: preference)
+            }
+        }
     }
 }
 

@@ -13,7 +13,7 @@ struct RootTabView: View {
                 ProgressTabView()
             }
             Tab("Settings", systemImage: "gearshape") {
-                Text("Settings")
+                SettingsView()
             }
         }
     }
