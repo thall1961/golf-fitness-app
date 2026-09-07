@@ -2091,7 +2091,7 @@
                   "sets": 3,
                   "target": {
                     "kind": "reps",
-                    "value": 16
+                    "value": 7
                   },
                   "restSeconds": 30,
                   "note": "Quick, light feet -- this is speed work, not a grind."
@@ -2203,7 +2203,7 @@
                   "sets": 3,
                   "target": {
                     "kind": "reps",
-                    "value": 12
+                    "value": 6
                   },
                   "restSeconds": 30,
                   "note": "Land soft -- control beats height here."
@@ -2409,10 +2409,10 @@
               "prescriptions": [
                 {
                   "exerciseID": "skater-hop",
-                  "sets": 3,
+                  "sets": 4,
                   "target": {
                     "kind": "reps",
-                    "value": 18
+                    "value": 7
                   },
                   "restSeconds": 30,
                   "note": "Quick, light feet -- this is speed work, not a grind."
@@ -2521,10 +2521,10 @@
               "prescriptions": [
                 {
                   "exerciseID": "split-jump",
-                  "sets": 3,
+                  "sets": 4,
                   "target": {
                     "kind": "reps",
-                    "value": 14
+                    "value": 6
                   },
                   "restSeconds": 30,
                   "note": "Land soft -- control beats height here."
@@ -2730,10 +2730,10 @@
               "prescriptions": [
                 {
                   "exerciseID": "skater-hop",
-                  "sets": 3,
+                  "sets": 4,
                   "target": {
                     "kind": "reps",
-                    "value": 20
+                    "value": 8
                   },
                   "restSeconds": 30,
                   "note": "Quick, light feet -- this is speed work, not a grind."
@@ -2842,10 +2842,10 @@
               "prescriptions": [
                 {
                   "exerciseID": "split-jump",
-                  "sets": 3,
+                  "sets": 4,
                   "target": {
                     "kind": "reps",
-                    "value": 16
+                    "value": 7
                   },
                   "restSeconds": 30,
                   "note": "Land soft -- control beats height here."
@@ -3054,7 +3054,7 @@
                   "sets": 4,
                   "target": {
                     "kind": "reps",
-                    "value": 20
+                    "value": 8
                   },
                   "restSeconds": 25,
                   "note": "Quick, light feet -- this is speed work, not a grind."
@@ -3166,7 +3166,7 @@
                   "sets": 4,
                   "target": {
                     "kind": "reps",
-                    "value": 16
+                    "value": 7
                   },
                   "restSeconds": 25,
                   "note": "Land soft -- control beats height here."
@@ -3372,10 +3372,10 @@
               "prescriptions": [
                 {
                   "exerciseID": "skater-hop",
-                  "sets": 4,
+                  "sets": 5,
                   "target": {
                     "kind": "reps",
-                    "value": 22
+                    "value": 8
                   },
                   "restSeconds": 20,
                   "note": "Quick, light feet -- this is speed work, not a grind."
@@ -3484,10 +3484,10 @@
               "prescriptions": [
                 {
                   "exerciseID": "split-jump",
-                  "sets": 4,
+                  "sets": 5,
                   "target": {
                     "kind": "reps",
-                    "value": 18
+                    "value": 7
                   },
                   "restSeconds": 20,
                   "note": "Land soft -- control beats height here."
@@ -3596,7 +3596,7 @@
         {
           "id": "osp-w6d1",
           "name": "Rotational Power -- Week 6",
-          "estimatedMinutes": 42,
+          "estimatedMinutes": 43,
           "blocks": [
             {
               "kind": "warmup",
@@ -3638,7 +3638,7 @@
               "prescriptions": [
                 {
                   "exerciseID": "band-rotational-punch",
-                  "sets": 3,
+                  "sets": 4,
                   "target": {
                     "kind": "repsPerSide",
                     "value": 9
@@ -3648,7 +3648,7 @@
                 },
                 {
                   "exerciseID": "club-speed-swing",
-                  "sets": 3,
+                  "sets": 4,
                   "target": {
                     "kind": "reps",
                     "value": 11
@@ -3661,7 +3661,7 @@
                   "sets": 3,
                   "target": {
                     "kind": "repsPerSide",
-                    "value": 11
+                    "value": 12
                   },
                   "restSeconds": 20,
                   "note": null
@@ -3671,7 +3671,7 @@
                   "sets": 3,
                   "target": {
                     "kind": "repsPerSide",
-                    "value": 11
+                    "value": 12
                   },
                   "restSeconds": 20,
                   "note": null
@@ -3681,7 +3681,7 @@
                   "sets": 3,
                   "target": {
                     "kind": "repsPerSide",
-                    "value": 11
+                    "value": 12
                   },
                   "restSeconds": 20,
                   "note": null
@@ -3693,10 +3693,10 @@
               "prescriptions": [
                 {
                   "exerciseID": "skater-hop",
-                  "sets": 4,
+                  "sets": 5,
                   "target": {
                     "kind": "reps",
-                    "value": 22
+                    "value": 9
                   },
                   "restSeconds": 20,
                   "note": "Quick, light feet -- this is speed work, not a grind."
@@ -3708,7 +3708,7 @@
         {
           "id": "osp-w6d2",
           "name": "Single-Leg Strength -- Week 6",
-          "estimatedMinutes": 41,
+          "estimatedMinutes": 42,
           "blocks": [
             {
               "kind": "warmup",
@@ -3753,7 +3753,7 @@
                   "sets": 3,
                   "target": {
                     "kind": "repsPerSide",
-                    "value": 11
+                    "value": 12
                   },
                   "restSeconds": 30,
                   "note": null
@@ -3763,14 +3763,14 @@
                   "sets": 3,
                   "target": {
                     "kind": "repsPerSide",
-                    "value": 11
+                    "value": 12
                   },
                   "restSeconds": 30,
                   "note": null
                 },
                 {
                   "exerciseID": "lateral-bound",
-                  "sets": 3,
+                  "sets": 4,
                   "target": {
                     "kind": "repsPerSide",
                     "value": 9
@@ -3783,7 +3783,7 @@
                   "sets": 3,
                   "target": {
                     "kind": "secondsPerSide",
-                    "value": 32
+                    "value": 36
                   },
                   "restSeconds": 20,
                   "note": null
@@ -3793,7 +3793,7 @@
                   "sets": 3,
                   "target": {
                     "kind": "repsPerSide",
-                    "value": 11
+                    "value": 12
                   },
                   "restSeconds": 20,
                   "note": null
@@ -3805,10 +3805,10 @@
               "prescriptions": [
                 {
                   "exerciseID": "split-jump",
-                  "sets": 4,
+                  "sets": 5,
                   "target": {
                     "kind": "reps",
-                    "value": 18
+                    "value": 8
                   },
                   "restSeconds": 20,
                   "note": "Land soft -- control beats height here."
@@ -3917,7 +3917,7 @@
         {
           "id": "osp-w7d1",
           "name": "Rotational Power -- Week 7",
-          "estimatedMinutes": 43,
+          "estimatedMinutes": 44,
           "blocks": [
             {
               "kind": "warmup",
@@ -3959,7 +3959,7 @@
               "prescriptions": [
                 {
                   "exerciseID": "band-rotational-punch",
-                  "sets": 3,
+                  "sets": 4,
                   "target": {
                     "kind": "repsPerSide",
                     "value": 10
@@ -3969,7 +3969,7 @@
                 },
                 {
                   "exerciseID": "club-speed-swing",
-                  "sets": 3,
+                  "sets": 4,
                   "target": {
                     "kind": "reps",
                     "value": 12
@@ -3982,7 +3982,7 @@
                   "sets": 3,
                   "target": {
                     "kind": "repsPerSide",
-                    "value": 12
+                    "value": 13
                   },
                   "restSeconds": 20,
                   "note": null
@@ -3992,7 +3992,7 @@
                   "sets": 3,
                   "target": {
                     "kind": "repsPerSide",
-                    "value": 12
+                    "value": 13
                   },
                   "restSeconds": 20,
                   "note": null
@@ -4002,7 +4002,7 @@
                   "sets": 3,
                   "target": {
                     "kind": "repsPerSide",
-                    "value": 12
+                    "value": 13
                   },
                   "restSeconds": 20,
                   "note": null
@@ -4014,10 +4014,10 @@
               "prescriptions": [
                 {
                   "exerciseID": "skater-hop",
-                  "sets": 4,
+                  "sets": 6,
                   "target": {
                     "kind": "reps",
-                    "value": 24
+                    "value": 9
                   },
                   "restSeconds": 20,
                   "note": "Quick, light feet -- this is speed work, not a grind."
@@ -4029,7 +4029,7 @@
         {
           "id": "osp-w7d2",
           "name": "Single-Leg Strength -- Week 7",
-          "estimatedMinutes": 42,
+          "estimatedMinutes": 43,
           "blocks": [
             {
               "kind": "warmup",
@@ -4074,7 +4074,7 @@
                   "sets": 3,
                   "target": {
                     "kind": "repsPerSide",
-                    "value": 12
+                    "value": 13
                   },
                   "restSeconds": 30,
                   "note": null
@@ -4084,14 +4084,14 @@
                   "sets": 3,
                   "target": {
                     "kind": "repsPerSide",
-                    "value": 12
+                    "value": 13
                   },
                   "restSeconds": 30,
                   "note": null
                 },
                 {
                   "exerciseID": "lateral-bound",
-                  "sets": 3,
+                  "sets": 4,
                   "target": {
                     "kind": "repsPerSide",
                     "value": 10
@@ -4104,7 +4104,7 @@
                   "sets": 3,
                   "target": {
                     "kind": "secondsPerSide",
-                    "value": 36
+                    "value": 40
                   },
                   "restSeconds": 20,
                   "note": null
@@ -4114,7 +4114,7 @@
                   "sets": 3,
                   "target": {
                     "kind": "repsPerSide",
-                    "value": 12
+                    "value": 13
                   },
                   "restSeconds": 20,
                   "note": null
@@ -4126,10 +4126,10 @@
               "prescriptions": [
                 {
                   "exerciseID": "split-jump",
-                  "sets": 4,
+                  "sets": 6,
                   "target": {
                     "kind": "reps",
-                    "value": 20
+                    "value": 8
                   },
                   "restSeconds": 20,
                   "note": "Land soft -- control beats height here."
@@ -4238,7 +4238,7 @@
         {
           "id": "osp-w8d1",
           "name": "Rotational Power -- Week 8",
-          "estimatedMinutes": 44,
+          "estimatedMinutes": 45,
           "blocks": [
             {
               "kind": "warmup",
@@ -4280,20 +4280,20 @@
               "prescriptions": [
                 {
                   "exerciseID": "band-rotational-punch",
-                  "sets": 3,
+                  "sets": 5,
                   "target": {
                     "kind": "repsPerSide",
-                    "value": 11
+                    "value": 10
                   },
                   "restSeconds": 30,
                   "note": null
                 },
                 {
                   "exerciseID": "club-speed-swing",
-                  "sets": 3,
+                  "sets": 5,
                   "target": {
                     "kind": "reps",
-                    "value": 13
+                    "value": 12
                   },
                   "restSeconds": 30,
                   "note": null
@@ -4303,7 +4303,7 @@
                   "sets": 3,
                   "target": {
                     "kind": "repsPerSide",
-                    "value": 13
+                    "value": 14
                   },
                   "restSeconds": 20,
                   "note": null
@@ -4313,7 +4313,7 @@
                   "sets": 3,
                   "target": {
                     "kind": "repsPerSide",
-                    "value": 13
+                    "value": 14
                   },
                   "restSeconds": 20,
                   "note": null
@@ -4323,7 +4323,7 @@
                   "sets": 3,
                   "target": {
                     "kind": "repsPerSide",
-                    "value": 13
+                    "value": 14
                   },
                   "restSeconds": 20,
                   "note": null
@@ -4335,10 +4335,10 @@
               "prescriptions": [
                 {
                   "exerciseID": "skater-hop",
-                  "sets": 4,
+                  "sets": 6,
                   "target": {
                     "kind": "reps",
-                    "value": 26
+                    "value": 10
                   },
                   "restSeconds": 20,
                   "note": "Quick, light feet -- this is speed work, not a grind."
@@ -4350,7 +4350,7 @@
         {
           "id": "osp-w8d2",
           "name": "Single-Leg Strength -- Week 8",
-          "estimatedMinutes": 43,
+          "estimatedMinutes": 44,
           "blocks": [
             {
               "kind": "warmup",
@@ -4395,7 +4395,7 @@
                   "sets": 3,
                   "target": {
                     "kind": "repsPerSide",
-                    "value": 13
+                    "value": 14
                   },
                   "restSeconds": 30,
                   "note": null
@@ -4405,17 +4405,17 @@
                   "sets": 3,
                   "target": {
                     "kind": "repsPerSide",
-                    "value": 13
+                    "value": 14
                   },
                   "restSeconds": 30,
                   "note": null
                 },
                 {
                   "exerciseID": "lateral-bound",
-                  "sets": 3,
+                  "sets": 5,
                   "target": {
                     "kind": "repsPerSide",
-                    "value": 11
+                    "value": 10
                   },
                   "restSeconds": 20,
                   "note": null
@@ -4425,7 +4425,7 @@
                   "sets": 3,
                   "target": {
                     "kind": "secondsPerSide",
-                    "value": 40
+                    "value": 44
                   },
                   "restSeconds": 20,
                   "note": null
@@ -4435,7 +4435,7 @@
                   "sets": 3,
                   "target": {
                     "kind": "repsPerSide",
-                    "value": 13
+                    "value": 14
                   },
                   "restSeconds": 20,
                   "note": null
@@ -4447,10 +4447,10 @@
               "prescriptions": [
                 {
                   "exerciseID": "split-jump",
-                  "sets": 4,
+                  "sets": 6,
                   "target": {
                     "kind": "reps",
-                    "value": 22
+                    "value": 9
                   },
                   "restSeconds": 20,
                   "note": "Land soft -- control beats height here."
