@@ -1,4 +1,4 @@
-# Fairway Fit — Design
+# Fairway Forever — Design
 
 **Date:** 2026-09-05 (revised 2026-09-06 — content moved out of the binary)
 **Status:** Approved design, ready for implementation planning
@@ -28,7 +28,7 @@ Built fresh. It is not a fork of `~/solo/coach` (Everyday Trainer) or
 | Content storage | Versioned JSON document: bundled baseline + remote override, decoded to in-memory value types | Swift values in code; JSON seeded into SwiftData; a real backend with an editing UI |
 | Content host | `content.json` in a GitHub repo, fetched over HTTPS | S3/R2 + CDN, CloudKit public database |
 | Content authoring | Hand-written JSON | Spreadsheet + export script, generated draft |
-| Name / target | Fairway Fit, iOS 26 | — |
+| Name / target | Fairway Forever, iOS 26 | — |
 
 ## Architecture
 
@@ -406,7 +406,7 @@ YouTube in Safari.
 - XcodeGen `project.yml` generating `FairwayFit.xcodeproj` (gitignored),
   matching the convention in `~/solo/coach` and `~/solo/golf-trainer`.
 - SwiftUI, SwiftData, Swift Charts. No third-party dependencies.
-- Bundle id `com.thomashall.FairwayFit`, display name "Fairway Fit",
+- Bundle id `com.thomashall.FairwayFit`, display name "Fairway Forever",
   iOS 26 deployment target, iPhone only, portrait.
 - Swift Testing for all suites.
 - `Content/content.json` lives in this repo, is committed, is copied into the
