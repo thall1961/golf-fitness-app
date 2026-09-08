@@ -30,6 +30,7 @@ targets:
         CURRENT_PROJECT_VERSION: 1
         MARKETING_VERSION: "0.1.0"
         CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: ZY9ZXJB3VV
   FairwayFitTests:
     type: bundle.unit-test
     platform: iOS
