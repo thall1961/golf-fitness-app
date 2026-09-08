@@ -80,7 +80,7 @@ struct SettingsView: View {
                 } footer: {
                     if authorizationStatus == .denied {
                         VStack(alignment: .leading, spacing: 6) {
-                            Text("Notifications are turned off for Fairway Fit in iOS Settings, so reminders will not appear. Everything else works as normal.")
+                            Text("Notifications are turned off for Fairway Forever in iOS Settings, so reminders will not appear. Everything else works as normal.")
                             Button("Open Settings") {
                                 if let url = URL(string: UIApplication.openSettingsURLString) {
                                     openURL(url)
@@ -135,7 +135,7 @@ struct SettingsView: View {
               let program = appState.program(for: enrollment),
               let next = ProgramEngine.nextSession(program: program,
                                                    completions: enrollment.completionRecords) else {
-            await notifications.replaceReminders(title: "Fairway Fit",
+            await notifications.replaceReminders(title: "Fairway Forever",
                                                  body: "Pick a program and get going.",
                                                  preference: preference)
             return
@@ -145,6 +145,6 @@ struct SettingsView: View {
                                           total: program.sessions.count,
                                           sessionName: next.session.name,
                                           minutes: next.session.estimatedMinutes)
-        await notifications.replaceReminders(title: "Fairway Fit", body: body, preference: preference)
+        await notifications.replaceReminders(title: "Fairway Forever", body: body, preference: preference)
     }
 }

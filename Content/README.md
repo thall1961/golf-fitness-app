@@ -1,6 +1,6 @@
 # Content
 
-`content.json` is the whole of Fairway Fit's content: every exercise, session
+`content.json` is the whole of Fairway Forever's content: every exercise, session
 and program. It is bundled into the app as a baseline **and** served from this
 repository (`https://github.com/thall1961/golf-fitness-app`), so it can be
 updated on installed phones without an App Store release.

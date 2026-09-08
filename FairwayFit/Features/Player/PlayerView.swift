@@ -148,14 +148,14 @@ struct PlayerView: View {
             if let next = ProgramEngine.nextSession(program: program,
                                                     completions: enrollment.completionRecords) {
                 await notifications.replaceReminders(
-                    title: "Fairway Fit",
+                    title: "Fairway Forever",
                     body: ReminderScheduler.body(sessionNumber: next.index + 1,
                                                  total: program.sessions.count,
                                                  sessionName: next.session.name,
                                                  minutes: next.session.estimatedMinutes),
                     preference: preference)
             } else {
-                await notifications.replaceReminders(title: "Fairway Fit",
+                await notifications.replaceReminders(title: "Fairway Forever",
                                                      body: "Program complete. Pick what is next.",
                                                      preference: preference)
             }
